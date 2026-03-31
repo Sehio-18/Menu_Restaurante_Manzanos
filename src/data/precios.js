@@ -2,7 +2,7 @@
 export const platos = {
     //ENTRANTES
     vieiras: {
-        precio: "17.90",
+        precio: "20.00",
         foto: "vieiras.jpg",
         alergenos: ["moluscos", "gluten"],
         nombres:{
