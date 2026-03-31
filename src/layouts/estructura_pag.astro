@@ -5,7 +5,6 @@ import FiltroAlergenos from '../components/filtro_alergenos.astro';
 const { title } = Astro.props;
 const url = Astro.url.pathname;
 
-// Mantenemos la detección de idioma solo para el atributo de la página
 const lang = url.includes('/en/') ? 'en' : url.includes('/de/') ? 'de' : url.includes('/it/') ? 'it' : url.includes('/fr/') ? 'fr' : 'es';
 ---
 <!DOCTYPE html>
@@ -24,7 +23,6 @@ const lang = url.includes('/en/') ? 'en' : url.includes('/de/') ? 'de' : url.inc
 
     <div class="main-container">
         <FiltroAlergenos />
-        
         <slot />
     </div>
 
@@ -38,6 +36,12 @@ const lang = url.includes('/en/') ? 'en' : url.includes('/de/') ? 'de' : url.inc
         :root { 
             --dorado: #c5a059; 
             --fondo: #121212; 
+            /* ESCALADO GLOBAL: Bajamos a 14px para que todo se vea más fino en el móvil */
+            font-size: 14px;
+        }
+
+        @media (min-width: 768px) {
+            :root { font-size: 16px; }
         }
 
         body {
@@ -51,18 +55,18 @@ const lang = url.includes('/en/') ? 'en' : url.includes('/de/') ? 'de' : url.inc
         .nav-superior {
             display: flex;
             align-items: center;
-            padding: 1.5rem 2rem;
+            padding: 1rem 1.5rem; /* Reducido un poco para ganar espacio arriba */
             max-width: 1200px;
             margin: 0 auto;
         }
         
         .main-container { 
-            max-width: 650px; 
+            max-width: 600px; /* Estrechado para que en móviles anchos no se vea raro */
             margin: 0 auto; 
-            padding: 1rem 1.5rem 120px; 
+            padding: 0.5rem 1rem 120px; /* Reducido márgenes laterales */
         }
         
-        /* ESTILOS DEL MODAL */
+        /* AJUSTES PARA EL MODAL (IMÁGENES AMPLIADAS) */
         .modal-overlay {
             display: none; 
             position: fixed; 
@@ -80,36 +84,40 @@ const lang = url.includes('/en/') ? 'en' : url.includes('/de/') ? 'de' : url.inc
         }
 
         .modal-overlay img { 
-            max-width: 85%; 
-            max-height: 70vh; 
-            border: 2px solid var(--dorado); 
-            border-radius: 8px;
-            box-shadow: 0 0 40px rgba(0,0,0,0.8);
+            max-width: 90%; /* Ajustado para que ocupe casi toda la pantalla del móvil */
+            max-height: 65vh; 
+            border: 1px solid var(--dorado); 
+            border-radius: 12px;
+            box-shadow: 0 0 30px rgba(0,0,0,0.8);
             animation: zoomIn 0.3s ease;
         }
 
         #modal-title { 
             color: var(--dorado); 
             font-family: 'Playfair Display', serif; 
-            margin-top: 15px; 
-            font-size: 1.5rem; 
+            margin-top: 12px; 
+            font-size: 1.3rem; /* Título del plato en el modal más pequeño */
             text-transform: uppercase; 
             text-align: center;
+            padding: 0 10px;
         }
 
         .close-btn { 
             position: absolute; 
-            top: 20px; 
-            right: 30px; 
+            top: 15px; 
+            right: 20px; 
             color: white; 
-            font-size: 50px; 
+            font-size: 40px; /* Aspa de cierre más discreta */
             cursor: pointer; 
         }
         
         @keyframes zoomIn { 
-            from { opacity: 0; transform: scale(0.9); } 
+            from { opacity: 0; transform: scale(0.95); } 
             to { opacity: 1; transform: scale(1); } 
         }
+
+        /* Estilo extra por si los títulos de platos dentro del slot son h2 */
+        h2 { font-size: 1.5rem !important; }
     </style>
 
     <script is:inline>
