@@ -18,16 +18,25 @@
         :root {
             --dorado: #c5a059;
             --fondo: #121212;
+            /* REDUCIMOS LA BASE: Antes era 16px por defecto, ahora 14px para que todo lo que use 'rem' baje de tamaño */
+            font-size: 14px; 
         }
 
-        /* --- TÍTULO CON EFECTO DE BRILLO --- */
+        @media (min-width: 768px) {
+            :root {
+                font-size: 16px; /* En ordenadores vuelve al tamaño normal */
+            }
+        }
+
+        /* --- TÍTULO AJUSTADO (Más pequeño y elegante) --- */
         .titulo-principal {
             font-family: 'Playfair Display', serif;
             color: var(--dorado) !important;
-            font-size: 3rem;
-            letter-spacing: 5px;
+            font-size: 2.2rem; /* Bajado de 3rem */
+            letter-spacing: 3px; /* Menos agresivo */
             text-transform: uppercase;
-            margin: 0.5rem 0 1.5rem;
+            margin: 1rem 0 2rem;
+            line-height: 1.1;
             
             background: linear-gradient(
                 90deg,
@@ -47,7 +56,7 @@
             100% { background-position: 100% 0; }
         }
 
-        /* --- ESTILO DEL CUERPO --- */
+        /* --- CUERPO --- */
         body {
             margin: 0;
             background-color: var(--fondo) !important;
@@ -60,16 +69,27 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            /* Añadimos un poco de aire arriba */
+            padding-top: 40px;
         }
 
-        /* --- CONTENEDOR PRINCIPAL --- */
+        /* --- CONTENEDOR AJUSTADO --- */
         .main-container {
             background: transparent !important;
-            width: 100%;
-            max-width: 400px;
+            width: 90%; /* Ocupa el 90% del ancho del móvil */
+            max-width: 340px; /* Un poco más estrecho para que sea más estilizado */
             text-align: center;
-            padding: 2rem;
+            padding: 1rem 0;
             margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem; /* Espacio entre botones más compacto */
+        }
+
+        /* Ajuste para los botones de idioma si usas etiquetas <a> */
+        .main-container a {
+            text-decoration: none;
+            width: 100%;
         }
     </style>
 </body>
