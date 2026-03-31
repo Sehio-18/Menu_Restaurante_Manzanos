@@ -1,90 +1,75 @@
----
-// src/layouts/estructura_indice.astro
-// Tus imports y lógica existentes...
-<title>Restaurante Los Manzanos | Carta Digital y Menú</title>
----
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <title>Restaurante Los Manzanos | Carta Digital y Menú</title>
-    <meta name="description" content="Descubre la carta digital del Restaurante Los Manzanos. Especialistas en cocina tradicional, arroces, carnes y pescados. Disponible en varios idiomas." />
-    <meta name="keywords" content="Restaurante Los Manzanos, carta digital, menú online, cocina tradicional, arroces, carnes, pescados" />
-    <link rel="canonical" href="https://menu-restaurante-manzanos.vercel.app/" />
-
-    <meta property="og:title" content="Restaurante Los Manzanos - Carta Digital" />
-    <meta property="og:description" content="Consulta nuestro menú de arroces, carnes y pescados. ¡Te esperamos!" />
-    <meta property="og:image" content="/favicon.svg" /> <meta property="og:url" content="https://menu-restaurante-manzanos.vercel.app/" />
-
+    <title>Restaurante Los Manzanos | Carta Digital</title>
+    <meta name="description" content="Consulta la carta digital del Restaurante Los Manzanos. Arroces, carnes y pescados con la mejor tradición." />
+    
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    </head>
+</head>
 <body>
     <div class="main-container">
         <slot />
     </div>
 
     <style is:global>
-        /* Define tu variable de dorado si no está aquí */
         :root {
-        --dorado: #c5a059;
-        --fondo: #121212;
+            --dorado: #c5a059;
+            --fondo: #121212;
         }
 
-        /* --- CLASE ESPECÍFICA PARA EL TÍTULO "LOS MANZANOS" --- */
+        /* --- TÍTULO CON EFECTO DE BRILLO --- */
         .titulo-principal {
-            font-family: 'Playfair Display', serif; /* Asegúrate de que esta fuente esté cargada */
-            color: var(--dorado) !important; /* Fuerza el color dorado */
-            font-size: 3rem; /* Tamaño grande, ajústalo si es necesario */
-            letter-spacing: 5px; /* Espaciado entre letras premium */
+            font-family: 'Playfair Display', serif;
+            color: var(--dorado) !important;
+            font-size: 3rem;
+            letter-spacing: 5px;
             text-transform: uppercase;
             margin: 0.5rem 0 1.5rem;
             
-            /* --- INICIO DEL EFECTO DE BRILLO --- */
             background: linear-gradient(
                 90deg,
-                rgba(197, 160, 89, 1) 0%,   /* var(--dorado) */
-                rgba(255, 255, 255, 1) 40%,  /* Brillo blanco central */
-                rgba(197, 160, 89, 1) 100%   /* var(--dorado) */
+                rgba(197, 160, 89, 1) 0%, 
+                rgba(255, 255, 255, 1) 40%, 
+                rgba(197, 160, 89, 1) 100%
             );
             background-size: 200% auto;
             color: transparent;
             -webkit-background-clip: text;
             background-clip: text;
-            animation: brilloDorado 5s linear infinite; /* Animación continua y lenta */
+            animation: brilloDorado 5s linear infinite;
         }
 
-        /* --- DEFINICIÓN DE LA ANIMACIÓN DE BRILLO --- */
         @keyframes brilloDorado {
             0% { background-position: -100% 0; }
             100% { background-position: 100% 0; }
         }
 
-        /* --- TUS OTROS ESTILOS EXISTENTES (fondo de cuero, etc.) --- */
+        /* --- ESTILO DEL CUERPO --- */
         body {
             margin: 0;
-        /* Forzamos el fondo oscuro y la imagen de textura */
-        background-color: var(--fondo) !important;
-        background-image: url('/textura_negro_cuero.png') !important;
-        background-repeat: repeat;
-        background-attachment: fixed;
-        color: #fdfaf5;
-        font-family: 'Poppins', sans-serif;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        /* Asegúrate de que el contenedor principal no tenga fondo blanco */
-    .main-container {
-        background: transparent !important;
-        width: 100%;
-        max-width: 400px;
-        text-align: center;
-        padding: 2rem;
-    }
+            background-color: var(--fondo) !important;
+            background-image: url('/textura_negro_cuero.png') !important;
+            background-repeat: repeat;
+            background-attachment: fixed;
+            color: #fdfaf5;
+            font-family: 'Poppins', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* --- CONTENEDOR PRINCIPAL --- */
+        .main-container {
+            background: transparent !important;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            padding: 2rem;
+            margin: 0 auto;
         }
     </style>
 </body>
