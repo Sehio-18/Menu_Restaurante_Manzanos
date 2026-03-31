@@ -771,7 +771,7 @@ export const platos = {
     },
     bolaHelado: {
         precio: "3.50",
-        foto: "helados.jpg", // Puedes usar la misma de helados si no tienes una específica
+        foto: "bola-helado.jpg", // Puedes usar la misma de helados si no tienes una específica
         alergenos: ["lacteos"],
         nombres:{
             es: "Bola Individual de helado Artesanal",
