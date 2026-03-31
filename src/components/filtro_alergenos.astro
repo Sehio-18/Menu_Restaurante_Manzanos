@@ -1,0 +1,140 @@
+---
+import { ui } from '../data/ui.js';
+
+// 1. Obtenemos la ruta limpia
+const url = Astro.url.pathname;
+
+// 2. Detección robusta: Dividimos la ruta por "/" y buscamos el código de idioma
+// Esto detecta correctamente tanto "/it/index" como "/it"
+const segments = url.split('/');
+const lang = segments.find(s => ['en', 'it', 'de', 'fr'].includes(s)) || 'es';
+
+// 3. Función de traducción
+const t = (key) => ui[lang]?.[key] || ui['es'][key];
+
+const listaAlergenos = [
+  { id: 'gluten', icon: 'gluten.svg' },
+  { id: 'crustaceos', icon: 'crustaceos.svg' },
+  { id: 'huevos', icon: 'huevos.svg' },
+  { id: 'pescado', icon: 'pescado.svg' },
+  { id: 'soja', icon: 'soja.svg' },
+  { id: 'lacteos', icon: 'lacteos.svg' },
+  { id: 'moluscos', icon: 'moluscos.svg' },
+  { id: 'frutos-secos', icon: 'frutos-secos.svg' }
+];
+---
+
+<div class="filtro-container">
+  <p class="filtro-instrucciones">
+    {t('info.filtro_instrucciones')}
+  </p>
+  
+  <div class="iconos-filtro">
+    {listaAlergenos.map(a => (
+      <button class="btn-filtro" data-alergeno={a.id} title={t(`alergenos.${a.id}`)}>
+        <img src={`/assets/alergenos/${a.icon}`} alt={a.id} />
+        <span class="prohibido">/</span>
+      </button>
+    ))}
+  </div>
+</div>
+
+<style>
+  .filtro-container {
+    margin: 2rem 0;
+    padding: 1.5rem 1rem;
+    background: rgba(197, 160, 89, 0.05);
+    border-radius: 15px;
+    border: 1px dashed rgba(197, 160, 89, 0.3);
+    text-align: center;
+  }
+  .filtro-instrucciones {
+    font-size: 0.85rem;
+    margin-bottom: 1.2rem;
+    color: var(--dorado);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+  .iconos-filtro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  .btn-filtro {
+    position: relative;
+    background: #1a1a1a;
+    border: 2px solid rgba(197, 160, 89, 0.2);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+  .btn-filtro img { width: 28px; height: 28px; opacity: 0.7; }
+  
+  .btn-filtro.active {
+    border-color: #ff4444;
+    background: #2a1010;
+    transform: scale(1.1);
+  }
+  .btn-filtro.active img { opacity: 1; }
+  
+  .prohibido {
+    position: absolute;
+    color: #ff4444;
+    font-size: 35px;
+    font-weight: bold;
+    display: none;
+    pointer-events: none;
+    line-height: 1;
+  }
+  .btn-filtro.active .prohibido { display: block; }
+
+  @media (max-width: 480px) {
+    .btn-filtro { width: 45px; height: 45px; }
+    .btn-filtro img { width: 24px; height: 24px; }
+  }
+</style>
+
+<script>
+  // Esta función se ejecuta en el navegador
+  function ejecutarFiltro() {
+    const botones = document.querySelectorAll('.btn-filtro');
+    
+    botones.forEach(btn => {
+      btn.addEventListener('click', () => {
+        btn.classList.toggle('active');
+        filtrarPlatos();
+      });
+    });
+
+    function filtrarPlatos() {
+      const activos = Array.from(document.querySelectorAll('.btn-filtro.active'))
+                           .map(b => b.getAttribute('data-alergeno'));
+      
+      const platos = document.querySelectorAll('.plato-card');
+
+      platos.forEach(plato => {
+        const dataAttr = plato.getAttribute('data-alergenos');
+        const alergenosPlato = dataAttr ? dataAttr.split(',') : [];
+        
+        // El plato se oculta si contiene alguno de los alérgenos seleccionados
+        const tieneConflicto = activos.some(a => alergenosPlato.includes(a));
+
+        if (tieneConflicto) {
+          plato.style.display = 'none';
+        } else {
+          plato.style.display = 'block';
+        }
+      });
+    }
+  }
+
+  // Ejecutar al cargar la página
+  ejecutarFiltro();
+</script>

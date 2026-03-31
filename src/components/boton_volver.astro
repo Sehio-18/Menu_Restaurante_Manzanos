@@ -1,0 +1,60 @@
+---
+// src/components/boton_volver.astro
+import { ui } from '../data/ui.js';
+
+const url = Astro.url.pathname;
+const lang = url.includes('/en/') ? 'en' : url.includes('/de/') ? 'de' : url.includes('/it/') ? 'it' : 'es';
+const t = ui[lang];
+---
+
+<div class="contenedor-fijo-idioma">
+    <a href="/" class="btn-volver-ovalado">
+        <span class="icono-mundo">🌐</span>
+        <span class="texto">{t['nav.seleccionar_idioma']}</span>
+    </a>
+</div>
+
+<style>
+    /* Eliminamos el contenedor de ancho completo y fijamos el botón */
+    .btn-volver-ovalado {
+        position: fixed;        /* Se queda quieto en la pantalla */
+        bottom: 25px;           /* Distancia desde abajo */
+        left: 20px;             /* Distancia desde la izquierda */
+        z-index: 9999;          /* Por encima de todo */
+        
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        
+        background-color: #c5a059; /* Tu dorado */
+        color: #111111;
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif; 
+        font-size: 0.9rem;
+        font-weight: 600;
+        
+        padding: 10px 20px;
+        border-radius: 50px;    /* Forma de cápsula */
+        box-shadow: 0 8px 15px rgba(0,0,0,0.5);
+        transition: all 0.3s ease;
+    }
+
+    .btn-volver-ovalado:hover {
+        transform: translateY(-3px) scale(1.05);
+        background-color: #d4af37;
+    }
+
+    .icono-mundo {
+        font-size: 1.2rem;
+    }
+
+    /* Ajuste para móviles */
+    @media (max-width: 600px) {
+        .btn-volver-ovalado {
+            bottom: 15px;
+            left: 15px;
+            padding: 8px 16px;
+            font-size: 0.8rem;
+        }
+    }
+</style>

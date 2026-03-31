@@ -1,0 +1,81 @@
+---
+import { ui } from '../data/ui.js';
+
+const url = Astro.url.pathname;
+
+// 1. Detección de idioma mejorada (incluyendo francés)
+let lang = 'es'; 
+if (url.includes('/en/') || url.endsWith('/en')) lang = 'en';
+else if (url.includes('/de/') || url.endsWith('/de')) lang = 'de';
+else if (url.includes('/it/') || url.endsWith('/it')) lang = 'it';
+else if (url.includes('/fr/') || url.endsWith('/fr')) lang = 'fr';
+
+// 2. Función de traducción con red de seguridad
+const t = (key) => ui[lang][key] || ui['es'][key];
+
+const todosLosAlergenos = ['gluten', 'crustaceos', 'huevos', 'pescado', 'soja', 'lacteos', 'moluscos', 'frutos-secos'];
+---
+
+<div class="contenedor-leyenda">
+  <p class="titulo-leyenda">{t('info.alergenos')}:</p>
+  
+  <div class="rejilla-leyenda">
+    {todosLosAlergenos.map((item) => (
+      <div class="item-leyenda">
+        <img src={`/assets/alergenos/${item}.svg`} alt={t(`alergenos.${item}`)} class="icono-leyenda" />
+        <span class="nombre-alergeno">{t(`alergenos.${item}`)}</span>
+      </div>
+    ))}
+  </div>
+</div>
+
+<style>
+  .contenedor-leyenda {
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(8px); 
+    border: 1px solid rgba(197, 160, 89, 0.2);
+    border-radius: 12px;
+    margin: 2rem 0;
+  }
+
+  .titulo-leyenda {
+    color: #c5a059;
+    font-weight: bold;
+    margin-bottom: 1.2rem;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+  }
+
+  .rejilla-leyenda {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1rem;
+  }
+
+  @media (min-width: 480px) {
+    .rejilla-leyenda {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .item-leyenda {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  .icono-leyenda {
+    width: 22px;
+    height: 22px;
+    filter: sepia(0.5) brightness(0.9);
+  }
+
+  .nombre-alergeno {
+    font-size: 0.85rem;
+    color: #e0e0e0;
+    /* Quitamos capitalize para que respete exactamente lo que escribiste en el diccionario */
+  }
+</style>

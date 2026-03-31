@@ -1,0 +1,78 @@
+---
+// src/layouts/estructura_indice.astro
+// Tus imports y lógica existentes...
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    </head>
+<body>
+    <div class="main-container">
+        <slot />
+    </div>
+
+    <style is:global>
+        /* Define tu variable de dorado si no está aquí */
+        :root {
+        --dorado: #c5a059;
+        --fondo: #121212;
+        }
+
+        /* --- CLASE ESPECÍFICA PARA EL TÍTULO "LOS MANZANOS" --- */
+        .titulo-principal {
+            font-family: 'Playfair Display', serif; /* Asegúrate de que esta fuente esté cargada */
+            color: var(--dorado) !important; /* Fuerza el color dorado */
+            font-size: 3rem; /* Tamaño grande, ajústalo si es necesario */
+            letter-spacing: 5px; /* Espaciado entre letras premium */
+            text-transform: uppercase;
+            margin: 0.5rem 0 1.5rem;
+            
+            /* --- INICIO DEL EFECTO DE BRILLO --- */
+            background: linear-gradient(
+                90deg,
+                rgba(197, 160, 89, 1) 0%,   /* var(--dorado) */
+                rgba(255, 255, 255, 1) 40%,  /* Brillo blanco central */
+                rgba(197, 160, 89, 1) 100%   /* var(--dorado) */
+            );
+            background-size: 200% auto;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            animation: brilloDorado 5s linear infinite; /* Animación continua y lenta */
+        }
+
+        /* --- DEFINICIÓN DE LA ANIMACIÓN DE BRILLO --- */
+        @keyframes brilloDorado {
+            0% { background-position: -100% 0; }
+            100% { background-position: 100% 0; }
+        }
+
+        /* --- TUS OTROS ESTILOS EXISTENTES (fondo de cuero, etc.) --- */
+        body {
+            margin: 0;
+        /* Forzamos el fondo oscuro y la imagen de textura */
+        background-color: var(--fondo) !important;
+        background-image: url('/textura_negro_cuero.png') !important;
+        background-repeat: repeat;
+        background-attachment: fixed;
+        color: #fdfaf5;
+        font-family: 'Poppins', sans-serif;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* Asegúrate de que el contenedor principal no tenga fondo blanco */
+    .main-container {
+        background: transparent !important;
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+        padding: 2rem;
+    }
+        }
+    </style>
+</body>
+</html>

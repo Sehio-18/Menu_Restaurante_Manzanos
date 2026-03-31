@@ -1,0 +1,45 @@
+---
+// src/components/selector_idiomas.astro
+const idiomas = [
+    { code: 'es', label: 'Español', flag: '🇪🇸' },
+    { code: 'en', label: 'English', flag: '🇬🇧' },
+    { code: 'de', label: 'Deutsch', flag: '🇩🇪' },
+    { code: 'it', label: 'Italiano', flag: '🇮🇹' }
+];
+---
+<div class="grid-idiomas">
+    {idiomas.map(idioma => (
+        <a href={`/${idioma.code}/`} class="boton-idioma">
+            <span class="flag">{idioma.flag}</span>
+            <span class="label">{idioma.label}</span>
+        </a>
+    ))}
+</div>
+
+<style>
+    .grid-idiomas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        width: 100%;
+        max-width: 400px;
+    }
+    .boton-idioma {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5rem;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(214, 175, 55, 0.3);
+        border-radius: 12px;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        color: white;
+    }
+    .boton-idioma:hover {
+        background: rgba(214, 175, 55, 0.15);
+        transform: translateY(-5px);
+        border-color: #d4af37;
+    }
+    .flag { font-size: 2rem; margin-bottom: 0.5rem; }
+</style>

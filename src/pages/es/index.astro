@@ -1,0 +1,251 @@
+---
+import EstructuraPag from '../../layouts/estructura_pag.astro';
+import LeyendaAlergenos from '../../components/leyenda_alergenos.astro';
+import TituloSeccion from '../../components/titulo_seccion.astro';
+import MenuDesplegable from '../../components/menu_desplegable.astro';
+import DisenoPlato from '../../components/diseno_plato.astro';
+import DisenoBebida from '../../components/diseno_bebida.astro';
+---
+
+<EstructuraPag title="Carta - Los Manzanos">
+    
+    <LeyendaAlergenos />
+
+    <main>
+        <TituloSeccion titulo="NUESTROS PLATOS" />
+        
+        <MenuDesplegable titulo="Entrantes">
+            <DisenoPlato id="vieiras" />
+            <DisenoPlato id="langostinos" />
+            <DisenoPlato id="pastel" />
+            <DisenoPlato id="cecina" />
+            <DisenoPlato id="empanada" />
+            <DisenoPlato id="foie" />
+            <DisenoPlato id="navajas" />
+            <DisenoPlato id="croquetas" />
+        </MenuDesplegable>
+
+        <MenuDesplegable titulo="Mariscos">
+            <p class="advertencia-interna">
+                "Todos los precios mostrados son por persona y se necesita pedir mínimo para 2 personas para ordenar"
+            </p>
+            <DisenoPlato id="arrozNegro" />
+            <DisenoPlato id="arrozBogavante" />
+            <DisenoPlato id="arrozMarineiro" />
+            <DisenoPlato id="fidegua" />
+        </MenuDesplegable>
+
+        <MenuDesplegable titulo="Carnes">
+            <DisenoPlato id="cochinillo" />
+            <DisenoPlato id="solomillo" />
+            <DisenoPlato id="solomilloRoquefort" />
+            <DisenoPlato id="entrecot" />
+        </MenuDesplegable>
+
+        <MenuDesplegable titulo="Pescado">
+            <DisenoPlato id="rapeSugerencia" />
+            <DisenoPlato id="lubinaSugerencia" />
+            <DisenoPlato id="bacalaoManzanos" />
+            <DisenoPlato id="bacalaoDourado" />
+        </MenuDesplegable>
+
+        <TituloSeccion titulo="DEL HORNO A LA MESA" />
+        
+        <MenuDesplegable titulo="Pizzas">
+             <p class="advertencia-interna">
+                "Masa de elaboración propia italiana. Base de salsa de tomate, mozzarella y orégano (todas las pizzas)."
+            </p>
+            <DisenoPlato id="pizzaMargarita" tieneFoto={false} />
+            <DisenoPlato id="pizzaMixta" tieneFoto={false} />
+            <DisenoPlato id="pizzaCaprichosa" tieneFoto={false} />
+            <DisenoPlato id="pizzaCantabrica" tieneFoto={false} />
+            <DisenoPlato id="pizzaSiciliana" tieneFoto={false} />
+            <DisenoPlato id="pizzaCuatroQuesos" tieneFoto={false} />
+            <DisenoPlato id="pizzaDelPais" tieneFoto={false} />
+            <DisenoPlato id="pizzaAtlantica" tieneFoto={false} />
+            <DisenoPlato id="pizzaCampista" tieneFoto={false} />
+            <DisenoPlato id="pizzaTresSabores" tieneFoto={false} />
+            <DisenoPlato id="pizzaVegetariana" tieneFoto={false} />
+        </MenuDesplegable>
+        
+        <TituloSeccion titulo="EL TOQUE DULCE DE LA CASA" />
+        
+        <MenuDesplegable titulo="Postres">
+            <DisenoPlato id="tartaCastana"  />
+            <DisenoPlato id="tocinilloCielo"  />
+            <DisenoPlato id="brownie" />
+            <DisenoPlato id="tartaQueso" />
+            <DisenoPlato id="heladosSurtidos" />
+            <DisenoPlato id="tiramisu" />
+            <DisenoPlato id="heladoDulceLeche" />
+            <DisenoPlato id="falsoTomate" />
+            <DisenoPlato id="bolaHelado" />
+        </MenuDesplegable>
+        
+
+ <TituloSeccion titulo="Vinos" />
+
+<MenuDesplegable titulo="Vinos por copa">
+    <DisenoBebida id="copaAlbarino" tieneDescripcion={false} labelCopa="Copa" />
+    <DisenoBebida id="copaGodello" tieneDescripcion={false} labelCopa="Copa" />
+    <DisenoBebida id="copaRibeiro" tieneDescripcion={false} labelCopa="Copa" />
+    <DisenoBebida id="copaRibera" tieneDescripcion={false} labelCopa="Copa" />
+    <DisenoBebida id="copaRioja" tieneDescripcion={false} labelCopa="Copa" />
+    <DisenoBebida id="copaMencia" tieneDescripcion={false} labelCopa="Copa" />   
+</MenuDesplegable>
+
+<MenuDesplegable titulo="Vinos Tintos">
+    <DisenoBebida id="rebolledo" />
+    <DisenoBebida id="abadiaCova" />
+    <DisenoBebida id="cregoMonaguillo" />
+    <DisenoBebida id="castroLobarzan" />
+    <DisenoBebida id="campillo" />
+    <DisenoBebida id="ramonBilbao" />
+    <DisenoBebida id="baigorri" />
+    <DisenoBebida id="azpilicueta" />
+    <DisenoBebida id="ramonBilbaoLimitada" />
+    <DisenoBebida id="lanD12" />
+    <DisenoBebida id="lanMano" />
+    <DisenoBebida id="fincaValpiedra" />
+    <DisenoBebida id="quintaTarsus" />
+    <DisenoBebida id="manchonMieres" /> 
+    <DisenoBebida id="vilano" />
+    <DisenoBebida id="matasnos" /> 
+    <DisenoBebida id="velilla" />
+    <DisenoBebida id="fincaVallejo" /> 
+    <DisenoBebida id="malabrigo" />
+    <DisenoBebida id="pagoSantaCruz" /> 
+    <DisenoBebida id="valOsa" />
+    <DisenoBebida id="petitPittacum" /> 
+    <DisenoBebida id="retuerta" /> 
+    <DisenoBebida id="elPillo" />
+</MenuDesplegable>
+
+<MenuDesplegable titulo="Vinos blancos">
+    <DisenoBebida id="santiagoRuiz" />
+    <DisenoBebida id="bouzaDoRei" />
+    <DisenoBebida id="terrasGauda" />
+    <DisenoBebida id="condeAlbarei" />
+    <DisenoBebida id="marDeFrades" />
+    <DisenoBebida id="casalDeArman" /> 
+    <DisenoBebida id="vinaCosteira" />
+    <DisenoBebida id="cuatroFerrados" />
+    <DisenoBebida id="cregoMonaguilloBlanco" />
+    <DisenoBebida id="castroLobarzanBlanco" />
+    <DisenoBebida id="rebolledoBlanco" />
+    <DisenoBebida id="guitian"/>
+    <DisenoBebida id="godeval" />
+    <DisenoBebida id="godevalCepasVellas"  />
+    <DisenoBebida id="vinasDelVero"  /> 
+</MenuDesplegable>
+
+<TituloSeccion titulo="Vinos Rosados y Dulces " />
+
+        <MenuDesplegable titulo="Vinos Rosas">
+            <DisenoBebida id="pizarrasOtero"  />
+            <DisenoBebida id="lambruscoGalieri" /> 
+        </MenuDesplegable>
+
+        <MenuDesplegable titulo="Vinos Dulces">
+            <DisenoBebida id="pedroXimenez" />
+            <DisenoBebida id="oportoSandeman"  />
+            <DisenoBebida id="moscatelNaranja" />
+        </MenuDesplegable>
+
+        <TituloSeccion titulo="Espumosos: Cavas y Champagne" />
+
+        <MenuDesplegable titulo="Vinos Espumosos y Cava">
+            <DisenoBebida id="marDeFradesEspumoso"  />
+            <DisenoBebida id="annaCodorniu" />
+            <DisenoBebida id="sumarrocaReserva"  />
+            <DisenoBebida id="sumarrocaRose"  />  
+        </MenuDesplegable>
+
+        <MenuDesplegable titulo="Champagne">
+            <DisenoBebida id="veuveClicquot"  />
+            <DisenoBebida id="bollinger"  />
+            <DisenoBebida id="moetChandon"  /> 
+        </MenuDesplegable>
+        
+
+<TituloSeccion titulo="COCTELERÍA" />
+
+<MenuDesplegable titulo="Ginebras">
+    <DisenoBebida id="beefeater" />
+    <DisenoBebida id="beefeater24" />
+    <DisenoBebida id="bombay" />
+    <DisenoBebida id="bombaySapphire" />
+    <DisenoBebida id="bulldog" />
+    <DisenoBebida id="citadelle" />
+    <DisenoBebida id="gVine" />
+    <DisenoBebida id="gordons" />
+    <DisenoBebida id="hendricks" />
+    <DisenoBebida id="june" />
+    <DisenoBebida id="larios" />
+    <DisenoBebida id="larios12" />
+    <DisenoBebida id="martinMillers" />
+    <DisenoBebida id="seagrams" />
+    <DisenoBebida id="tanqueray" />
+    <DisenoBebida id="puertoIndias" />
+    <DisenoBebida id="nordes" />
+    <DisenoBebida id="ginmare" />
+    <DisenoBebida id="formentera" />
+</MenuDesplegable>
+
+<MenuDesplegable titulo="Whisky">
+    <DisenoBebida id="whisky100Pipers" />
+    <DisenoBebida id="ballantines" />
+    <DisenoBebida id="cardhu" />
+    <DisenoBebida id="chivasRegal" />
+</MenuDesplegable>
+
+<MenuDesplegable titulo="Brandy">
+    <DisenoBebida id="brandy1866" />
+    <DisenoBebida id="cardenalMendoza" />
+    <DisenoBebida id="carlosI" />
+    <DisenoBebida id="duqueAlba" />
+    <DisenoBebida id="luisFelipe" />
+    <DisenoBebida id="magno" />
+    <DisenoBebida id="torres5" />
+    <DisenoBebida id="torres10" />
+    <DisenoBebida id="torres20" />
+    <DisenoBebida id="veterano" />
+</MenuDesplegable>
+
+<MenuDesplegable titulo="Vermut">
+    <DisenoBebida id="martiniBlanco" />
+    <DisenoBebida id="martiniRojo" />
+    <DisenoBebida id="petrony" />
+    <DisenoBebida id="yzaguirre" />
+    <DisenoBebida id="chizpaso" />
+    <DisenoBebida id="vermutMezclado" />
+</MenuDesplegable>
+
+<MenuDesplegable titulo="Vodka">
+    <DisenoBebida id="absolut" />
+    <DisenoBebida id="stolichnaya" />
+</MenuDesplegable>
+    </main>
+
+    <style>
+        .advertencia-interna {
+            font-size: 0.85rem;
+            color: var(--dorado);
+            font-style: italic;
+            text-align: center;
+            margin: 0 1rem 2rem 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px dashed rgba(197, 160, 89, 0.3);
+            display: block;
+            line-height: 1.4;
+        }
+
+        main {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            /* Bajamos un poco el padding superior para compensar el filtro del layout */
+            padding: 1rem 1.5rem 5rem;
+        }
+    </style>
+</EstructuraPag>

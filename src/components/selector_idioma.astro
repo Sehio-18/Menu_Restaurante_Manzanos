@@ -1,0 +1,86 @@
+---
+import { ui } from '../data/ui.js';
+
+const url = Astro.url.pathname;
+
+// 1. Detectar idioma actual
+let lang = 'es'; 
+if (url.includes('/en/') || url.endsWith('/en')) lang = 'en';
+else if (url.includes('/de/') || url.endsWith('/de')) lang = 'de';
+else if (url.includes('/it/') || url.endsWith('/it')) lang = 'it';
+else if (url.includes('/fr/') || url.endsWith('/fr')) lang = 'fr';
+
+const t = (key) => ui[lang][key] || ui['es'][key];
+
+// 2. Función mágica para cambiar el idioma de la URL actual
+// Si estás en /es/contacto, te devolverá /en/contacto
+const construirRuta = (nuevoLang) => {
+  const segmentos = url.split('/').filter(Boolean);
+  
+  // Si el primer segmento es un código de idioma, lo reemplazamos
+  if (['es', 'en', 'de', 'it', 'fr'].includes(segmentos[0])) {
+    segmentos[0] = nuevoLang;
+  } else {
+    // Si no hay idioma en la URL (ej. la raíz /), lo añadimos
+    segmentos.unshift(nuevoLang);
+  }
+  return `/${segmentos.join('/')}`;
+};
+---
+
+<div class="idioma-wrapper">
+  <button class="btn-idioma" id="botonIdioma">
+    <span>{t('nav.seleccionar_idioma')}</span>
+    <img src={`/assets/flags/${lang}.svg`} alt="" class="flag-icon" />
+  </button>
+
+  <div class="dropdown-idiomas" id="menuIdioma">
+    <a href={construirRuta('es')} class={lang === 'es' ? 'active' : ''}>Español</a>
+    <a href={construirRuta('en')} class={lang === 'en' ? 'active' : ''}>English</a>
+    <a href={construirRuta('fr')} class={lang === 'fr' ? 'active' : ''}>Français</a>
+    <a href={construirRuta('de')} class={lang === 'de' ? 'active' : ''}>Deutsch</a>
+    <a href={construirRuta('it')} class={lang === 'it' ? 'active' : ''}>Italiano</a>
+  </div>
+</div>
+
+<style>
+  .idioma-wrapper { position: relative; display: inline-block; }
+  
+  .btn-idioma {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid var(--dorado);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  .dropdown-idiomas {
+    display: none; /* Se activa con JS o :hover */
+    position: absolute;
+    top: 110%;
+    right: 0;
+    background: #1a1a1a;
+    border: 1px solid var(--dorado);
+    border-radius: 8px;
+    min-width: 150px;
+    z-index: 100;
+  }
+
+  .idioma-wrapper:hover .dropdown-idiomas { display: block; }
+
+  .dropdown-idiomas a {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+
+  .dropdown-idiomas a:hover { background: rgba(197, 160, 89, 0.2); }
+  .active { color: var(--dorado) !important; font-weight: bold; }
+  .flag-icon { width: 20px; height: 15px; object-fit: cover; }
+</style>

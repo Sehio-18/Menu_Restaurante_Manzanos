@@ -1,0 +1,144 @@
+---
+import { platos } from '../data/precios.js';
+import { ui } from '../data/ui.js';
+
+const { 
+  id, 
+  tieneDescripcion = true, 
+  mostrarAlergenos = true,
+  // Estas props ahora son opcionales, si no se pasan, se usa el diccionario
+  labelCopa,
+  labelShot,
+  labelComb,
+  label12 = "1/2",
+  label34 = "3/4",
+  labelMagnum = "Magnum"
+} = Astro.props;
+
+const bebida = platos[id];
+if (!bebida) return null;
+
+// 1. Detectar idioma desde la URL
+const url = Astro.url.pathname;
+const segments = url.split('/');
+const lang = segments.find(s => ['en', 'it', 'de', 'fr'].includes(s)) || 'es';
+
+// 2. Función interna de traducción
+const t = (key) => ui[lang]?.[key] || ui['es'][key];
+
+// 3. Definir etiquetas finales (prioridad: Prop > Diccionario > Texto fijo)
+const finalLabelCopa = labelCopa || t('label.copa');
+const finalLabelShot = labelShot || t('label.shot');
+const finalLabelComb = labelComb || t('label.combinado');
+
+const nombre = bebida.nombres?.[lang] || bebida.nombres?.['es'] || id;
+const descripcion = bebida.descripciones?.[lang] || bebida.descripciones?.['es'] || "";
+const denominacion = bebida.denominacion || ""; 
+---
+
+<div class="bebida-card" data-alergenos={bebida.alergenos?.join(',')}>
+    <div class="linea-superior">
+        <div class="info-principal">
+            <h3 class="nombre-bebida">
+                {nombre}
+                {denominacion && <span class="denominacion-texto">({denominacion})</span>}
+            </h3>
+        </div>
+        
+        <div class="precios-grid">
+            {bebida.precioShot && (
+                <div class="precio-box">
+                    <span class="etiqueta">{finalLabelShot}</span>
+                    <span class="valor">{bebida.precioShot}€</span>
+                </div>
+            )}
+
+            {bebida.precioCopa && (
+                <>
+                    {bebida.precioShot && <span class="separador">|</span>}
+                    <div class="precio-box">
+                        <span class="etiqueta">{finalLabelCopa}</span>
+                        <span class="valor">{bebida.precioCopa}€</span>
+                    </div>
+                </>
+            )}
+
+            {bebida.precioCombinado && (
+                <>
+                    {(bebida.precioCopa || bebida.precioShot) && <span class="separador">|</span>}
+                    <div class="precio-box">
+                        <span class="etiqueta">{finalLabelComb}</span>
+                        <span class="valor">{bebida.precioCombinado}€</span>
+                    </div>
+                </>
+            )}
+
+            {bebida.precio12 && (
+                <>
+                    {(bebida.precioCopa || bebida.precioShot || bebida.precioCombinado) && <span class="separador">|</span>}
+                    <div class="precio-box">
+                        <span class="etiqueta">{label12}</span>
+                        <span class="valor">{bebida.precio12}€</span>
+                    </div>
+                </>
+            )}
+
+            {bebida.precio34 && (
+                <>
+                    {(bebida.precioCopa || bebida.precioShot || bebida.precioCombinado || bebida.precio12) && <span class="separador">|</span>}
+                    <div class="precio-box">
+                        <span class="etiqueta">{label34}</span>
+                        <span class="valor">{bebida.precio34}€</span>
+                    </div>
+                </>
+            )}
+
+            {bebida.precioMagnum && (
+                <>
+                    {(bebida.precioCopa || bebida.precioShot || bebida.precioCombinado || bebida.precio12 || bebida.precio34) && <span class="separador">|</span>}
+                    <div class="precio-box">
+                        <span class="etiqueta">{labelMagnum}</span>
+                        <span class="valor">{bebida.precioMagnum}€</span>
+                    </div>
+                </>
+            )}
+        </div>
+    </div>
+
+    {mostrarAlergenos && bebida.alergenos && bebida.alergenos.length > 0 && (
+        <div class="alergenos-bebida">
+            {bebida.alergenos.map(a => (
+                <img src={`/assets/alergenos/${a}.svg`} alt={a} class="icono-v" />
+            ))}
+        </div>
+    )}
+
+    {tieneDescripcion && descripcion && (
+        <p class="desc-bebida">{descripcion}</p>
+    )}
+</div>
+
+<style>
+    .bebida-card { padding: 1.2rem 0; border-bottom: 1px solid rgba(197, 160, 89, 0.15); }
+    .linea-superior { display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+    .info-principal { flex: 1; }
+    .nombre-bebida { color: #C5A059; font-family: 'Playfair Display', serif; font-size: 1.1rem; margin: 0; }
+    .denominacion-texto { font-family: 'Poppins', sans-serif; font-size: 0.8rem; font-style: italic; color: #aaa; margin-left: 8px; }
+    
+    .precios-grid { display: flex; align-items: center; gap: 8px; }
+    .precio-box { display: flex; flex-direction: column; align-items: center; min-width: 55px; }
+    
+    .etiqueta { font-size: 0.7rem; text-transform: uppercase; opacity: 0.8; color: #fff; font-weight: 600; margin-bottom: 2px; text-align: center; }
+    .valor { font-weight: 700; color: #C5A059; font-size: 1rem; }
+    .separador { color: #C5A059; opacity: 0.3; font-size: 1.2rem; margin-top: 10px; }
+
+    .desc-bebida { font-size: 0.85rem; opacity: 0.7; margin-top: 6px; font-style: italic; color: #eee; }
+    .alergenos-bebida { display: flex; gap: 4px; margin-top: 5px; }
+    .icono-v { width: 16px; height: 16px; opacity: 0.8; }
+
+    @media (max-width: 480px) {
+        .linea-superior { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+        .separador { display: none; }
+        .precios-grid { width: 100%; justify-content: flex-start; gap: 15px; }
+    }
+</style>

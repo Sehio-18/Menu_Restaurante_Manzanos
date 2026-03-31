@@ -1,0 +1,89 @@
+---
+// 1. RECIBIMOS EL TÍTULO (ej: "ENTRANTES")
+const { titulo } = Astro.props;
+---
+
+<details class="grupo-categoria">
+  <summary>
+    <span class="titulo-texto">{titulo}</span>
+    <div class="icon-wrapper">
+      <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M6 9l6 6 6-6"></path>
+      </svg>
+    </div>
+  </summary>
+
+  <div class="contenido">
+    <slot /> </div>
+</details>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+  .grupo-categoria {
+    background: rgba(26, 26, 26, 0.8);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 8px; /* Un poco más redondeado para seguir tu estilo */
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    list-style: none;
+    transition: all 0.3s ease;
+  }
+  
+  summary {
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    padding: 1.5rem;
+    cursor: pointer;
+    position: relative;
+    color: #ffffff;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    list-style: none;
+    outline: none;
+  }
+
+  /* Eliminamos marcadores de flecha por defecto */
+  summary::-webkit-details-marker { display: none !important; }
+  summary { list-style-type: none !important; }
+
+  .icon-wrapper {
+    position: absolute;
+    right: 1.5rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .chevron { 
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1); 
+    color: #d4af37;
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* ESTADO ABIERTO */
+  .grupo-categoria[open] summary {
+    background: rgba(212, 175, 55, 0.15);
+    color: #d4af37;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+  }
+
+  .grupo-categoria[open] .chevron { 
+    transform: rotate(180deg); 
+  }
+
+  .contenido { 
+    padding: 2rem 1.5rem;
+    background: rgba(18, 18, 18, 0.4);
+    /* Animación de entrada suave */
+    animation: fadeIn 0.5s ease;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>

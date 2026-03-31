@@ -1,0 +1,130 @@
+---
+import LayoutHome from '../layouts/estructura_indice.astro';
+
+const idiomas = [
+    { code: 'es', label: 'Español' },
+    { code: 'en', label: 'English' },
+    { code: 'fr', label: 'Français' },
+    { code: 'de', label: 'Deutsch' },
+    { code: 'it', label: 'Italiano' }
+];
+---
+
+<LayoutHome title="Los Manzanos - Selección de Idioma">
+    <div class="bienvenida-texto">
+        BIENVENIDOS · WELCOME
+    </div>
+    
+    <h1 class="brillo-dorado">LOS MANZANOS</h1>
+    
+    <div class="container-idiomas">
+        {idiomas.map((idioma) => (
+            <a href={`/${idioma.code}`} class="btn-idioma">
+                {idioma.label}
+            </a>
+        ))}
+    </div>
+
+    <p class="footer-texto">
+        DIGITAL MENU
+    </p>
+</LayoutHome>
+
+<style>
+   <style>
+    /* --- TEXTOS AUXILIARES --- */
+    .bienvenida-texto {
+        font-size: 0.9rem; 
+        color: var(--dorado); 
+        letter-spacing: 3px; 
+        margin-bottom: 5px; 
+        opacity: 0.9;
+        text-align: center;
+    }
+
+    .footer-texto {
+        margin-top: 40px; 
+        font-size: 0.8rem; 
+        color: rgba(253, 250, 245, 0.4); 
+        letter-spacing: 2px;
+        text-align: center;
+    }
+
+    /* --- EFECTO BRILLO DORADO PARA EL TÍTULO --- */
+    .brillo-dorado {
+        font-family: 'Playfair Display', serif;
+        /* OPCIÓN 1: Reducimos ligeramente el tamaño y el espaciado para que no se corte */
+        font-size: 2.3rem; 
+        letter-spacing: 2px; 
+        text-transform: uppercase;
+        margin: 10px 0 40px;
+        font-weight: 700;
+        text-align: center;
+        
+        /* Brillo */
+        background: linear-gradient(
+            to right, 
+            #c5a059 10%, 
+            #fdfaf5 50%, 
+            #c5a059 90%
+        );
+        background-size: 200% auto;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: shine 6s linear infinite;
+        
+        /* Evita cortes visuales */
+        white-space: nowrap; 
+        overflow: visible;
+        display: block;
+        width: 100%;
+    }
+
+    @keyframes shine {
+        0% { background-position: 200% center; }
+        100% { background-position: -200% center; }
+    }
+
+    /* --- CONTENEDOR DE BOTONES --- */
+    .container-idiomas {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    /* --- ESTILO DE LOS BOTONES --- */
+    .btn-idioma { 
+        display: block; 
+        width: 100%; 
+        padding: 14px; 
+        border: 1px solid var(--dorado); 
+        color: var(--dorado); 
+        text-decoration: none; 
+        text-align: center; 
+        border-radius: 30px; 
+        font-weight: bold; 
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        background: transparent;
+        font-size: 1rem;
+    }
+
+    .btn-idioma:hover { 
+        background: var(--dorado); 
+        color: white; 
+        transform: translateY(-3px); 
+        box-shadow: 0 5px 15px rgba(197, 160, 89, 0.3); 
+    }
+
+    /* --- AJUSTE PARA MÓVILES (Unificado) --- */
+    @media (max-width: 480px) {
+        .brillo-dorado {
+            font-size: 1.6rem; /* Tamaño seguro para pantallas pequeñas */
+            letter-spacing: 1px;
+        }
+    }
+</style>

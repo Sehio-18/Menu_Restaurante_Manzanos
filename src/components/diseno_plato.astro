@@ -1,0 +1,82 @@
+---
+import { platos } from '../data/precios.js';
+import { ui } from '../data/ui.js';
+
+// Añadimos tieneDescripcion con valor por defecto true
+const { id, tieneFoto = true, tieneDescripcion = true } = Astro.props; 
+const plato = platos[id];
+
+if (!plato) return null;
+
+const url = Astro.url.pathname;
+const segments = url.split('/');
+const lang = segments.find(s => ['en', 'it', 'de', 'fr'].includes(s)) || 'es';
+
+const t = (key) => ui[lang]?.[key] || ui['es'][key];
+
+// Fallbacks seguros para evitar errores de "undefined"
+const nombre = plato.nombres?.[lang] || plato.nombres?.['es'] || "";
+const descripcion = plato.descripciones?.[lang] || plato.descripciones?.['es'] || "";
+
+// BLINDAJE: Solo hacemos replace si el nombre existe
+const nombreParaModal = (nombre && typeof nombre === 'string') 
+    ? nombre.replace(/'/g, "\\'") 
+    : "";
+---
+
+<div 
+    class={`plato-card ${!tieneFoto ? 'sin-puntero' : ''}`} 
+    onclick={tieneFoto ? `openModal('/assets/platos/${plato.foto}', '${nombreParaModal}')` : null}
+    data-alergenos={plato.alergenos ? plato.alergenos.join(',') : ''} 
+>
+    <div class="info-superior">
+        <h3 class="nombre-plato">{nombre}</h3>
+        <span class="precio">{plato.precio}€</span>
+    </div>
+    
+    <div class="alergenos">
+        {plato.alergenos && plato.alergenos.map(a => (
+            <img 
+                src={`/assets/alergenos/${a}.svg`} 
+                alt={t(`alergenos.${a}`)} 
+                class="icono-mini" 
+                title={t(`alergenos.${a}`)} 
+            />
+        ))}
+    </div>
+
+    {/* LÓGICA: Solo muestra la descripción si es true Y hay texto */}
+    {tieneDescripcion && descripcion && (
+        <p class="descripcion">{descripcion}</p>
+    )}
+    
+    {tieneFoto && (
+        <span class="tap-hint">
+            {t('btn.ver_mas')} 📷
+        </span>
+    )}
+</div>
+
+<style>
+    .plato-card {
+        padding: 1.2rem 0;
+        border-bottom: 1px solid rgba(197, 160, 89, 0.15);
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+    
+    .sin-puntero {
+        cursor: default !important;
+    }
+    .sin-puntero:hover {
+        background: transparent !important;
+    }
+
+    .nombre-plato { color: var(--dorado); margin: 0; font-size: 1.15rem; font-family: 'Playfair Display', serif; }
+    .precio { font-weight: bold; color: var(--dorado); }
+    .descripcion { font-size: 0.95rem; opacity: 0.8; font-style: italic; margin: 8px 0; color: #f5f5f5; }
+    .tap-hint { font-size: 0.7rem; color: var(--dorado); opacity: 0.6; letter-spacing: 1px; display: block; text-align: right; text-transform: uppercase; }
+    .icono-mini { width: 20px; height: 20px; margin-right: 6px; margin-top: 5px; }
+    .info-superior { display: flex; justify-content: space-between; align-items: baseline; }
+    .alergenos { display: flex; margin-top: 4px; }
+</style>
