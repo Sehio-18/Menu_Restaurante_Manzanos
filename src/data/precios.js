@@ -2,7 +2,7 @@
 export const platos = {
     //ENTRANTES
     vieiras: {
-        precio: "5000.00",
+        precio: "17.80",
         foto: "vieiras.jpg",
         alergenos: ["moluscos", "gluten"],
         nombres:{
@@ -42,7 +42,7 @@ export const platos = {
 
     },
     cecina: {
-        precio: "15.50",
+        precio: "17.50",
         foto: "cecina.jpg",
         alergenos: ["lacteos"],
         nombres:{
@@ -61,7 +61,7 @@ export const platos = {
     },
     },
     langostinos: {
-        precio: "14.80",
+        precio: "16.80",
         foto: "langostinos.jpg",
         alergenos: ["crustaceos", "gluten"],
        nombres:{
@@ -81,7 +81,7 @@ export const platos = {
     },
 
     empanada: {
-        precio: "10.80",
+        precio: "10.90",
         foto: "empanada.jpg",
         desc_es: "Casera de Atún | 6 unidades",
         alergenos: ["lacteos", "moluscos", "huevos", "gluten"],
@@ -102,7 +102,7 @@ export const platos = {
     },
 
     foie: {
-        precio: "14.50",
+        precio: "14.80",
         foto: "foie.jpg",
         alergenos: ["gluten", "sulfitos"],
         nombres:{
@@ -122,7 +122,7 @@ export const platos = {
     },
 
     navajas: {
-        precio: "14.50",
+        precio: "15.80",
         foto: "navajas.jpg",
         alergenos: ["moluscos"],
         nombres:{
@@ -142,7 +142,7 @@ export const platos = {
     },
 
      croquetas: {
-        precio: "11.30",
+        precio: "11.80",
         foto: "croquetas.jpg",
         alergenos: ["gluten", "huevos", "lacteos"],
 
