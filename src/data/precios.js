@@ -407,7 +407,7 @@ export const platos = {
 
     // === PIZZAS ===
     pizzaMargarita: {
-        precio: "11.90",
+        precio: "12.90",
         foto: "pizza_margarita.jpg",
         alergenos: ["gluten", "lacteos"],
         nombres:{
@@ -426,7 +426,7 @@ export const platos = {
     },
     },
     pizzaMixta: {
-        precio: "12.90",
+        precio: "13.90",
         foto: "mixta.jpg",
         alergenos: ["gluten", "lacteos"],
          nombres:{
@@ -445,7 +445,7 @@ export const platos = {
     },
     },
     pizzaCaprichosa: {
-        precio: "13.00",
+        precio: "14.80",
         foto: "caprichosa.jpg",
         alergenos: ["gluten", "lacteos"],
          nombres:{
@@ -464,7 +464,7 @@ export const platos = {
     },
     },
     pizzaCantabrica: {
-        precio: "14.50",
+        precio: "15.50",
         foto: "cantabrica.jpg",
         alergenos: ["gluten", "lacteos", "pescado"],
          nombres:{
@@ -483,7 +483,7 @@ export const platos = {
     },
     },
     pizzaSiciliana: {
-        precio: "13.50",
+        precio: "14.50",
         foto: "siciliana.jpg",
         alergenos: ["gluten", "lacteos"],
          nombres:{
@@ -502,7 +502,7 @@ export const platos = {
     },
     },
     pizzaCuatroQuesos: {
-        precio: "13.80",
+        precio: "14.80",
         foto: "cuatro_quesos.jpg",
         alergenos: ["gluten", "lacteos"],
          nombres:{
@@ -521,7 +521,7 @@ export const platos = {
     },
     },
     pizzaDelPais: {
-        precio: "13.80",
+        precio: "14.80",
         foto: "pizza_del_pais.jpg",
         alergenos: ["gluten", "lacteos"],
          nombres:{
@@ -540,7 +540,7 @@ export const platos = {
     },
     },
     pizzaAtlantica: {
-        precio: "13.80",
+        precio: "14.80",
         foto: "atlantica.jpg",
         alergenos: ["gluten", "lacteos", "pescado"],
          nombres:{
@@ -559,7 +559,7 @@ export const platos = {
     },
     },
     pizzaCampista: {
-        precio: "14.50",
+        precio: "15.50",
         foto: "campista.jpg",
         alergenos: ["gluten", "lacteos", "huevos"],
          nombres:{
@@ -578,7 +578,7 @@ export const platos = {
     },
     },
     pizzaTresSabores: {
-        precio: "14.50",
+        precio: "15.50",
         foto: "3sabores.jpg",
         alergenos: ["gluten", "lacteos"],
          nombres:{
@@ -597,7 +597,7 @@ export const platos = {
     },
     },
     pizzaVegetariana: {
-        precio: "13.50",
+        precio: "14.50",
         foto: "vegetariana.jpg",
         alergenos: ["gluten", "lacteos"],
          nombres:{
