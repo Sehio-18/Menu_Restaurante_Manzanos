@@ -245,7 +245,7 @@ export const platos = {
 
     // === CARNES ===
     cochinillo: {
-        precio: "22.50",
+        precio: "23.50",
         foto: "cochinillo.jpg",
         alergenos: [],
        nombres:{
@@ -265,7 +265,7 @@ export const platos = {
     },
 
     solomillo: {
-        precio: "21.80",
+        precio: "23.50",
         foto: "solomillo.jpg",
         desc_es: "De ternera al horno de leña con guarnición patatas",
         alergenos: [],
@@ -286,7 +286,7 @@ export const platos = {
     },
 
     solomilloRoquefort: {
-        precio: "22.50",
+        precio: "23.80",
         foto: "solomillo_roquefort.jpg",
         alergenos: ["lacteos"],
        nombres:{
@@ -306,7 +306,7 @@ export const platos = {
     },
 
     entrecot: {
-        precio: "19.80",
+        precio: "21.80",
         foto: "entrecot.jpg",
         alergenos: ["lacteos", "gluten"],
         nombres:{
