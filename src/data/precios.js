@@ -164,7 +164,7 @@ export const platos = {
 
     // === MARISCOS ===
     arrozNegro: {
-        precio: "24.50",
+        precio: "25.80",
         foto: "arroz_negro.jpg",
         alergenos: ["pescado", "crustaceos", "moluscos"],
         nombres:{
@@ -204,7 +204,7 @@ export const platos = {
     },
 
     arrozMarineiro: {
-        precio: "21.00",
+        precio: "22.00",
         foto: "arroz_marineiro.jpg",
         alergenos: ["pescado", "crustaceos", "moluscos"],
         nombres:{
@@ -224,7 +224,7 @@ export const platos = {
     },
 
     fidegua: {
-        precio: "21.00",
+        precio: "22.00",
         foto: "fidegua.jpg",
         alergenos: ["pescado", "crustaceos", "moluscos", "gluten"],
         nombres:{
