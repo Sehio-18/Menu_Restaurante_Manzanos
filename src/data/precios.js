@@ -904,7 +904,7 @@ export const platos = {
     },
     },
     cregoMonaguillo: {
-        precio34: "17.50",
+        precio34: "17.80",
         denominacion: "MONTERREY",
         alergenos: [],
         nombres: {
@@ -1010,7 +1010,7 @@ export const platos = {
     },
     azpilicueta: {
         precio34: "17.50",
-        precioMagnum: "42.00",
+        precioMagnum: "34.00",
         denominacion: "RIOJA",
         alergenos:  [],
         nombres: {
@@ -1030,7 +1030,7 @@ export const platos = {
     },
     },
     ramonBilbaoLimitada: {
-        precio34: "22.80",
+        precio34: "22.00",
         precioMagnum: "42.00",
         denominacion: "VENDIMIAS SELECCIONADAS",
         alergenos:  [],
@@ -1833,7 +1833,7 @@ export const platos = {
         },
     },
     bollinger: {
-        precio34: "68.50",
+        precio34: "68.00",
         denominacion: "CHAMPAGNE",
         alergenos: [],
         nombres: {
