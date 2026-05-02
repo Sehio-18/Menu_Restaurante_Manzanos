@@ -1090,6 +1090,26 @@ export const platos = {
         
     },
     },
+     ramonBilbaoReserva: {
+        precio34: "21.00",
+        denominacion: "GRANDES VINOS",
+        alergenos:  [],
+        nombres: {
+             es: "Ramón Bilbao Reserva ",
+             en: "Ramón Bilbao Reserva " ,
+             fr: "Ramón Bilbao Reserva " ,
+             de: "Ramón Bilbao Reserva " ,
+             it: "Ramón Bilbao Reserva " ,
+            },
+        descripciones: {
+            es: "Vino equilibrado y con sutiles notas de crianza.",
+            en: "Balanced wine with subtle notes of aging.",
+            fr: "Vin équilibré aux subtiles notes d'élevage.",
+            de: "Ausgewogener Wein mit subtilen Reifenoten.",
+            it: "Vino equilibrato con sottili note di affinamento."
+        },
+     },
+    
     fincaValpiedra: {
         precio34: "26.00",
         denominacion: "GRANDES VINOS",
