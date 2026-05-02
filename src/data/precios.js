@@ -1487,7 +1487,7 @@ export const platos = {
     },   
     },
     cuatroFerrados: {
-        precio: "18.80",
+        precio34: "18.80",
         denominacion: "RIBEIRO",
         alergenos: [],
         nombres: {
