@@ -326,7 +326,7 @@ export const platos = {
     },
     // === PESCADOS ===
     rapeSugerencia: {
-        precio: "22.50",
+        precio: "23.50",
         foto: "rape.jpg",
         alergenos: ["pescado", "crustaceos", "moluscos"],
         nombres:{
@@ -346,7 +346,7 @@ export const platos = {
     },
 
     lubinaSugerencia: {
-        precio: "22.00",
+        precio: "23.00",
         foto: "lubina.jpg",
         alergenos: ["pescado"],
         nombres:{
@@ -366,7 +366,7 @@ export const platos = {
     },
 
     bacalaoManzanos: {
-        precio: "21.80",
+        precio: "22.80",
         foto: "bacalao_manzanos.jpg",
         alergenos: ["pescado"],
         nombres:{
