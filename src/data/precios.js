@@ -1194,11 +1194,11 @@ export const platos = {
         denominacion: "RIBERA DEL DUERO",
         alergenos: [],
         nombres: {
-             es: "Vilano",
-             en: "Vilano" ,
-             fr: "Vilano" ,
-             de: "Vilano" ,
-             it: "Vilano" ,
+             es: "Vilano 57",
+             en: "Vilano 57" ,
+             fr: "Vilano 57" ,
+             de: "Vilano 57" ,
+             it: "Vilano 57" ,
             },
         descripciones: {
             es: "Tempranillo expresivo, taninos redondos",
