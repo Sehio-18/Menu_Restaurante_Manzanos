@@ -884,7 +884,7 @@ export const platos = {
     },
     },
     abadiaCova: {
-        precio34: "19.50",
+        precio34: "19.00",
         denominacion: "RIBEIRA SACRA",
         alergenos: [],
         nombres: {
@@ -1029,6 +1029,25 @@ export const platos = {
         
     },
     },
+     luiscañas: {
+        precio34: "21.00",
+        denominacion: "RIOJA",
+        alergenos:  [],
+        nombres: {
+             es: "Luiz Cañas",
+             en: "Luiz Cañas" ,
+             fr: "Luiz Cañas" ,
+             de: "Luiz Cañas" ,
+             it: "Luiz Cañas" ,
+            },
+        descripciones: {
+            es: "Esfuerzo, tesón, pasión orientada al viñedo",
+            en: "Effort, tenacity, and a passion for the vineyard.",
+            fr: "Effort, ténacité et passion tournée vers le vignoble.",
+            de: "Anstrengung, Beharrlichkeit und Leidenschaft für den Weinberg.",
+            it: "Impegno, tenacia e passione orientata al vigneto."
+     },
+    },
     ramonBilbaoLimitada: {
         precio34: "22.00",
         precioMagnum: "42.00",
@@ -1151,7 +1170,7 @@ export const platos = {
     },
     },
     manchonMieres: {
-        precio34: "29.00",
+        precio34: "29.50",
         denominacion: "RIBERA DEL DUERO",
         alergenos: [],
         nombres: {
@@ -1171,7 +1190,7 @@ export const platos = {
     },
     },
     vilano: {
-        precio34: "21.00",
+        precio34: "22.00",
         denominacion: "RIBERA DEL DUERO",
         alergenos: [],
         nombres: {
@@ -1191,7 +1210,7 @@ export const platos = {
     },
     },
     matasnos: {
-        precio34: "38.00",
+        precio34: "39.00",
         denominacion: "RIBERA DEL DUERO",
         alergenos: [],
         nombres: {
@@ -1211,7 +1230,7 @@ export const platos = {
     },
     },
     velilla: {
-        precio34: "20.50",
+        precio34: "19.50",
         denominacion: "RIBERA DEL DUERO",
         alergenos: [],
         nombres: {
@@ -1251,7 +1270,7 @@ export const platos = {
     },
     },
     malabrigo: {
-        precio34: "48.00",
+        precio34: "46.00",
         denominacion: "PREMIUM SELECTION",
         alergenos: [],
         nombres: {
@@ -1271,7 +1290,7 @@ export const platos = {
     },
     },
     pagoSantaCruz: {
-        precio34: "56.00",
+        precio34: "58.00",
         denominacion: "PREMIUM SELECTION",
         alergenos: [],
         nombres: {
@@ -1311,7 +1330,7 @@ export const platos = {
     },
     },
     petitPittacum: {
-        precio34: "14.00",
+        precio34: "14.50",
         denominacion: "BIERZO",
         alergenos: [],
         nombres: {
@@ -1331,7 +1350,7 @@ export const platos = {
     },
     },
     retuerta: {
-        precio34: "38.00",
+        precio34: "39.00",
         denominacion: "TIERRAS DE LEÓN",
         alergenos: [],
         nombres: {
@@ -1449,7 +1468,7 @@ export const platos = {
     },   
     },
     marDeFrades: {
-        precio34: "24.00",
+        precio34: "24.50",
         denominacion: "RÍAS BAIXAS",
         alergenos: [],
         nombres: {
@@ -1468,7 +1487,7 @@ export const platos = {
     },   
     },
     casalDeArman: {
-        precio34: "22.00",
+        precio34: "22.50",
         denominacion: "RIBEIRO",
         alergenos: [],
         nombres: {
@@ -1507,7 +1526,7 @@ export const platos = {
     },   
     },
     cuatroFerrados: {
-        precio34: "18.80",
+        precio34: "19.80",
         denominacion: "RIBEIRO",
         alergenos: [],
         nombres: {
@@ -1602,6 +1621,26 @@ export const platos = {
             it: "Godello concentrato, grande eleganza"
     },   
     },
+     quintadapeza: {
+        precio34: "17.50",
+        denominacion: "GODELLO - VALDEORRAS",
+        alergenos: [],
+        nombres: {
+             es: "Quinta da Peza",
+             en: "Quinta da Peza" ,
+             fr: "Quinta da Peza" ,
+             de: "Quinta da Peza" ,
+             it: "Quinta da Peza" ,
+            },
+        descripciones: {
+           es: "En boca es ligero, suave y sabroso.",
+            en: "On the palate, it is light, smooth, and flavorful.",
+            fr: "En bouche, il est léger, souple et savoureux.",
+            de: "Im Mund ist er leicht, geschmeidig und schmackhaft.",
+            it: "In bocca è leggero, morbido e saporito."
+    },   
+    },
+    
     godeval: {
         precio34: "19.80",
         denominacion: "GODELLO - VALDEORRAS",
@@ -1622,7 +1661,7 @@ export const platos = {
     },   
     },
     godevalCepasVellas: {
-        precio34: "26.00",
+        precio34: "27.00",
         denominacion: "GODELLO - VALDEORRAS",
         alergenos: [],
         nombres: {
@@ -1758,7 +1797,7 @@ export const platos = {
 
 // === BURBUJAS: CAVAS Y CHAMPAGNE ===
     marDeFradesEspumoso: {
-        precio34: "26.00",
+        precio34: "28.00",
         denominacion: "ESPUMOSO",
         alergenos: [],
         nombres: {
@@ -1872,7 +1911,7 @@ export const platos = {
         },
     },
     moetChandon: {
-        precio34: "54.00",
+        precio34: "55.00",
         denominacion: "CHAMPAGNE",
         alergenos: [],
         nombres: {
