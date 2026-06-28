@@ -1,6 +1,7 @@
 ---
 import BotonVolver from '../components/boton_volver.astro';
 import FiltroAlergenos from '../components/filtro_alergenos.astro';
+import Analytics from '@vercel/analytics/astro';
 
 const { title } = Astro.props;
 const url = Astro.url.pathname;
@@ -13,6 +14,7 @@ const lang = url.includes('/en/') ? 'en' : url.includes('/de/') ? 'de' : url.inc
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
+    <Analytics />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
