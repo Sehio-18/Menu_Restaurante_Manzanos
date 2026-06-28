@@ -1,5 +1,4 @@
 ---
-// 1. RECIBIMOS EL TÍTULO (ej: "ENTRANTES")
 const { titulo } = Astro.props;
 ---
 
@@ -14,7 +13,8 @@ const { titulo } = Astro.props;
   </summary>
 
   <div class="contenido">
-    <slot /> </div>
+    <slot />
+  </div>
 </details>
 
 <style>
@@ -23,17 +23,17 @@ const { titulo } = Astro.props;
   .grupo-categoria {
     background: rgba(26, 26, 26, 0.8);
     border: 1px solid rgba(212, 175, 55, 0.3);
-    border-radius: 8px; /* Un poco más redondeado para seguir tu estilo */
+    border-radius: 8px;
     margin-bottom: 1.5rem;
     overflow: hidden;
     list-style: none;
     transition: all 0.3s ease;
   }
-  
+
   summary {
-    display: flex; 
+    display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     padding: 1.5rem;
     cursor: pointer;
     position: relative;
@@ -46,7 +46,6 @@ const { titulo } = Astro.props;
     outline: none;
   }
 
-  /* Eliminamos marcadores de flecha por defecto */
   summary::-webkit-details-marker { display: none !important; }
   summary { list-style-type: none !important; }
 
@@ -57,33 +56,31 @@ const { titulo } = Astro.props;
     align-items: center;
   }
 
-  .chevron { 
-    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1); 
+  .chevron {
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     color: #d4af37;
     width: 24px;
     height: 24px;
   }
-  
-  /* ESTADO ABIERTO */
+
   .grupo-categoria[open] summary {
     background: rgba(212, 175, 55, 0.15);
     color: #d4af37;
     border-bottom: 1px solid rgba(212, 175, 55, 0.2);
   }
 
-  .grupo-categoria[open] .chevron { 
-    transform: rotate(180deg); 
+  .grupo-categoria[open] .chevron {
+    transform: rotate(180deg);
   }
 
-  .contenido { 
+  .contenido {
     padding: 2rem 1.5rem;
     background: rgba(18, 18, 18, 0.4);
-    /* Animación de entrada suave */
     animation: fadeIn 0.5s ease;
   }
 
   @keyframes fadeIn {
     from { opacity: 0; transform: translateY(-10px); }
-    to { opacity: 1; transform: translateY(0); }
+    to   { opacity: 1; transform: translateY(0); }
   }
 </style>
