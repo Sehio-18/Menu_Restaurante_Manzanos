@@ -1,34 +1,26 @@
 ---
 import { ui } from '../data/ui.js';
 
-// 1. Obtenemos la ruta limpia
 const url = Astro.url.pathname;
-
-// 2. Detección robusta: Dividimos la ruta por "/" y buscamos el código de idioma
-// Esto detecta correctamente tanto "/it/index" como "/it"
 const segments = url.split('/');
 const lang = segments.find(s => ['en', 'it', 'de', 'fr'].includes(s)) || 'es';
-
-// 3. Función de traducción
 const t = (key) => ui[lang]?.[key] || ui['es'][key];
 
 const listaAlergenos = [
-  { id: 'gluten', icon: 'gluten.svg' },
-  { id: 'crustaceos', icon: 'crustaceos.svg' },
-  { id: 'huevos', icon: 'huevos.svg' },
-  { id: 'pescado', icon: 'pescado.svg' },
-  { id: 'soja', icon: 'soja.svg' },
-  { id: 'lacteos', icon: 'lacteos.svg' },
-  { id: 'moluscos', icon: 'moluscos.svg' },
-  { id: 'frutos-secos', icon: 'frutos-secos.svg' }
+  { id: 'gluten',       icon: 'gluten.svg' },
+  { id: 'crustaceos',   icon: 'crustaceos.svg' },
+  { id: 'huevos',       icon: 'huevos.svg' },
+  { id: 'pescado',      icon: 'pescado.svg' },
+  { id: 'soja',         icon: 'soja.svg' },
+  { id: 'lacteos',      icon: 'lacteos.svg' },
+  { id: 'moluscos',     icon: 'moluscos.svg' },
+  { id: 'frutos-secos', icon: 'frutos-secos.svg' },
 ];
 ---
 
-<div class="filtro-container">
-  <p class="filtro-instrucciones">
-    {t('info.filtro_instrucciones')}
-  </p>
-  
+<div class="grupo-categoria">
+  <p class="filtro-instrucciones">{t('info.filtro_instrucciones')}</p>
+
   <div class="iconos-filtro">
     {listaAlergenos.map(a => (
       <button class="btn-filtro" data-alergeno={a.id} title={t(`alergenos.${a.id}`)}>
@@ -40,28 +32,38 @@ const listaAlergenos = [
 </div>
 
 <style>
-  .filtro-container {
-    margin: 2rem 0;
-    padding: 1.5rem 1rem;
-    background: rgba(197, 160, 89, 0.05);
-    border-radius: 15px;
-    border: 1px dashed rgba(197, 160, 89, 0.3);
+  /* Caja idéntica a .grupo-categoria de menu_desplegable.astro */
+  .grupo-categoria {
+    background: rgba(26, 26, 26, 0.8);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    padding: 1.5rem;
     text-align: center;
   }
+
   .filtro-instrucciones {
-    font-size: 0.85rem;
-    margin-bottom: 1.2rem;
+    margin: 0 0 1.2rem 0;
     color: var(--dorado);
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 3px;
     font-weight: 600;
   }
+
+  /* Grid de 4 columnas con ancho exacto: 4×50px + 3×15px = 245px, centrado */
   .iconos-filtro {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: repeat(2, 50px);
     gap: 15px;
+    width: max-content;
+    margin: 0 auto;
   }
+
   .btn-filtro {
     position: relative;
     background: #1a1a1a;
@@ -74,16 +76,22 @@ const listaAlergenos = [
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
+    padding: 0;
   }
-  .btn-filtro img { width: 28px; height: 28px; opacity: 0.7; }
-  
+
+  .btn-filtro img {
+    width: 28px;
+    height: 28px;
+    opacity: 0.7;
+  }
+
   .btn-filtro.active {
     border-color: #ff4444;
     background: #2a1010;
     transform: scale(1.1);
   }
   .btn-filtro.active img { opacity: 1; }
-  
+
   .prohibido {
     position: absolute;
     color: #ff4444;
@@ -94,47 +102,25 @@ const listaAlergenos = [
     line-height: 1;
   }
   .btn-filtro.active .prohibido { display: block; }
-
-  @media (max-width: 480px) {
-    .btn-filtro { width: 45px; height: 45px; }
-    .btn-filtro img { width: 24px; height: 24px; }
-  }
 </style>
 
 <script>
-  // Esta función se ejecuta en el navegador
   function ejecutarFiltro() {
-    const botones = document.querySelectorAll('.btn-filtro');
-    
-    botones.forEach(btn => {
+    document.querySelectorAll('.btn-filtro').forEach(btn => {
       btn.addEventListener('click', () => {
         btn.classList.toggle('active');
-        filtrarPlatos();
+
+        const activos = Array.from(document.querySelectorAll('.btn-filtro.active'))
+                             .map(b => b.getAttribute('data-alergeno'));
+
+        document.querySelectorAll('.plato-card').forEach(plato => {
+          const alergenosPlato = (plato.getAttribute('data-alergenos') || '').split(',');
+          const tieneConflicto = activos.some(a => alergenosPlato.includes(a));
+          plato.style.display = tieneConflicto ? 'none' : 'block';
+        });
       });
     });
-
-    function filtrarPlatos() {
-      const activos = Array.from(document.querySelectorAll('.btn-filtro.active'))
-                           .map(b => b.getAttribute('data-alergeno'));
-      
-      const platos = document.querySelectorAll('.plato-card');
-
-      platos.forEach(plato => {
-        const dataAttr = plato.getAttribute('data-alergenos');
-        const alergenosPlato = dataAttr ? dataAttr.split(',') : [];
-        
-        // El plato se oculta si contiene alguno de los alérgenos seleccionados
-        const tieneConflicto = activos.some(a => alergenosPlato.includes(a));
-
-        if (tieneConflicto) {
-          plato.style.display = 'none';
-        } else {
-          plato.style.display = 'block';
-        }
-      });
-    }
   }
 
-  // Ejecutar al cargar la página
   ejecutarFiltro();
 </script>
