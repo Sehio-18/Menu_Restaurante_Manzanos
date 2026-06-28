@@ -15,8 +15,6 @@ const t = (key) => ui[lang]?.[key] || ui['es'][key];
 <EstructuraPag title="Carta - Los Manzanos">
     
     <LeyendaAlergenos />
-
-    <main>
         <TituloSeccion titulo="I NOSTRI PIATTI" />
         
         <MenuDesplegable titulo="Antipasti">
@@ -102,48 +100,48 @@ const t = (key) => ui[lang]?.[key] || ui['es'][key];
 
 <MenuDesplegable titulo="Vini rossi">
     {/* Aquí el componente mostrará automáticamente precio34, precioMagnum, etc., si existen en la data */}
-    <DisenoBebida id="rebolledo" />
-    <DisenoBebida id="abadiaCova" />
-    <DisenoBebida id="cregoMonaguillo" />
-    <DisenoBebida id="castroLobarzan" />
-    <DisenoBebida id="campillo" />
-    <DisenoBebida id="ramonBilbao" />
-    <DisenoBebida id="baigorri" />
-    <DisenoBebida id="azpilicueta" />
-    <DisenoBebida id="luiscañas" />
-    <DisenoBebida id="ramonBilbaoLimitada" />
-    <DisenoBebida id="lanD12" />
-    <DisenoBebida id="lanMano" />
-    <DisenoBebida id="ramonBilbaoReserva" />
-    <DisenoBebida id="fincaValpiedra" />
-    <DisenoBebida id="quintaTarsus" />
-    <DisenoBebida id="manchonMieres" /> 
-    <DisenoBebida id="vilano" />
-    <DisenoBebida id="matasnos" /> 
-    <DisenoBebida id="velilla" />
-    <DisenoBebida id="fincaVallejo" /> 
-    <DisenoBebida id="malabrigo" />
-    <DisenoBebida id="pagoSantaCruz" /> 
-    <DisenoBebida id="valOsa" />
-    <DisenoBebida id="petitPittacum" /> 
-    <DisenoBebida id="retuerta" /> 
-    <DisenoBebida id="elPillo" />
+    <DisenoBebida id="rebolledo" label34="3/4" labelMagnum="Magnum" />
+    <DisenoBebida id="abadiaCova" label34="3/4" />
+    <DisenoBebida id="cregoMonaguillo" label34="3/4" />
+    <DisenoBebida id="castroLobarzan" label34="3/4" />
+    <DisenoBebida id="campillo" label34="3/4" />
+    <DisenoBebida id="ramonBilbao" label34="3/4" />
+    <DisenoBebida id="baigorri" label34="3/4" />
+    <DisenoBebida id="azpilicueta" label34="3/4" />
+    <DisenoBebida id="ramonBilbaoLimitada" label34="3/4" />
+    <DisenoBebida id="lanD12" label34="3/4" />
+    <DisenoBebida id="lanMano" label34="3/4" />
+    <DisenoBebida id="fincaValpiedra" label34="3/4" />
+    <DisenoBebida id="quintaTarsus" label34="3/4" />
+    <DisenoBebida id="manchonMieres" label34="3/4" /> 
+    <DisenoBebida id="vilano" label34="3/4" />
+    <DisenoBebida id="matasnos" label34="3/4" /> 
+    <DisenoBebida id="velilla" label34="3/4" />
+    <DisenoBebida id="fincaVallejo" label34="3/4" /> 
+    <DisenoBebida id="malabrigo" label34="3/4" />
+    <DisenoBebida id="pagoSantaCruz" label34="3/4" /> 
+    <DisenoBebida id="valOsa" label34="3/4" />
+    <DisenoBebida id="petitPittacum" label34="3/4" /> 
+    <DisenoBebida id="retuerta" label34="3/4" /> 
+    <DisenoBebida id="elPillo" label34="3/4" />
 </MenuDesplegable>
 
 <MenuDesplegable titulo="Vini bianchi">
-     <DisenoBebida id="santiagoRuiz" />
-    <DisenoBebida id="bouzaDoRei" />
-    <DisenoBebida id="terrasGauda" />
-    <DisenoBebida id="condeAlbarei" />
-    <DisenoBebida id="marDeFrades" />
-    <DisenoBebida id="casalDeArman" /> 
-    <DisenoBebida id="vinaCosteira" />
-    <DisenoBebida id="cuatroFerrados" />
-    <DisenoBebida id="castroLobarzanBlanco" />
-    <DisenoBebida id="rebolledoBlanco" />
-    <DisenoBebida id="guitian"/>
-    <DisenoBebida id="quintadapeza" />
-    <DisenoBebida id="godevalCepasVellas" />
+    <DisenoBebida id="santiagoRuiz" label34="3/4" />
+    <DisenoBebida id="bouzaDoRei" label34="3/4" />
+    <DisenoBebida id="terrasGauda" label34="3/4" />
+    <DisenoBebida id="condeAlbarei" label34="3/4" />
+    <DisenoBebida id="marDeFrades" label34="3/4" />
+    <DisenoBebida id="casalDeArman" label34="3/4" /> 
+    <DisenoBebida id="vinaCosteira" label12="1/2" label34="3/4" />
+    <DisenoBebida id="cuatroFerrados" label34="3/4" />
+    <DisenoBebida id="cregoMonaguilloBlanco" label34="3/4" />
+    <DisenoBebida id="castroLobarzanBlanco" label34="3/4" />
+    <DisenoBebida id="rebolledoBlanco" label34="3/4" />
+    <DisenoBebida id="guitian" label34="3/4" />
+    <DisenoBebida id="godeval" label34="3/4" />
+    <DisenoBebida id="godevalCepasVellas" label34="3/4" />
+    <DisenoBebida id="vinasDelVero" label34="3/4" /> 
 </MenuDesplegable>
 
 <TituloSeccion titulo="Vini rosati e dolci" />
@@ -245,15 +243,6 @@ const t = (key) => ui[lang]?.[key] || ui['es'][key];
             display: block;
             line-height: 1.4;
         }
-
-        main {
-            width: 100%;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 0 1.5rem 5rem;
-        }
     </style>
-        
-    </main>
 
 </EstructuraPag>
