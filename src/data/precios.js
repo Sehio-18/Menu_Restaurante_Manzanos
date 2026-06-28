@@ -2,7 +2,7 @@
 export const platos = {
     //ENTRANTES
     vieiras: {
-        precio: "17,80",
+        precio: "17.90",
         foto: "vieiras.jpg",
         alergenos: ["moluscos", "gluten"],
         nombres:{
@@ -18,7 +18,7 @@ export const platos = {
             fr: "Du Pacifique gratinées au four à bois | 7 unités",
             de: "Pazifische Jakobsmuscheln gratiniert im Holzofen. | 7 Stück",
             it: "Del Pacifico gratinate nel forno a legna| 7 unità",
-    },
+        },
     },
 
     pastel: {
@@ -38,11 +38,10 @@ export const platos = {
             fr: "D'araignée de mer et crevettes avec salade de tomates et fromage frais. ",
             de: "Aus Seespinne und Garnelen mit Tomaten-Frischkäse-Salat.",
             it: "Di granseola e gamberi con insalata di pomodori e formaggio fresco.",
-    },
-
+        },
     },
     cecina: {
-        precio: "17.50",
+        precio: "15.50",
         foto: "cecina.jpg",
         alergenos: ["lacteos"],
         nombres:{
@@ -58,13 +57,13 @@ export const platos = {
             fr: "Bœuf séché de León avec fromage affiné et salade.",
             de: "Rinderschinken aus León mit gereiftem Käse und Salat.",
             it: "Manzo stagionato di León con formaggio stagionato e insalata.",
-    },
+        },
     },
     langostinos: {
-        precio: "16.80",
+        precio: "14.80",
         foto: "langostinos.jpg",
         alergenos: ["crustaceos", "gluten"],
-       nombres:{
+        nombres:{
             es: "Langostinos",
             en: "Prawns",
             fr: "Crevettes ",
@@ -77,13 +76,12 @@ export const platos = {
             fr: "Crevettes croustillantes Kataifi avec guacamole et sauce Ali-oli | 8 unités ",
             de: "Knusprige Kataifi-Garnelen mit Guacamole und Ali-oli-Sauce | 8 Stück",
             it: "Croccanti Kataifi con guacamole e salsa Ali-oli | 8 unità",
-    },
+        },
     },
 
     empanada: {
-        precio: "10.90",
+        precio: "10.80",
         foto: "empanada.jpg",
-        desc_es: "Casera de Atún | 6 unidades",
         alergenos: ["lacteos", "moluscos", "huevos", "gluten"],
         nombres:{
             es: "Empanada casera",
@@ -98,11 +96,11 @@ export const platos = {
             fr: "Chausson maison au thon | 6 unités ",
             de: "Hausgemachte Thunfisch-Pastete | 6 Stück",
             it: "Fatta in casa al tonno | 6 unità",
-    },
+        },
     },
 
     foie: {
-        precio: "14.80",
+        precio: "14.50",
         foto: "foie.jpg",
         alergenos: ["gluten", "sulfitos"],
         nombres:{
@@ -118,11 +116,11 @@ export const platos = {
             fr: "À l'huile de mûres",
             de: "Mit Brombeeröl",
             it: "Con olio di more",
-    },
+        },
     },
 
     navajas: {
-        precio: "15.80",
+        precio: "14.50",
         foto: "navajas.jpg",
         alergenos: ["moluscos"],
         nombres:{
@@ -138,15 +136,14 @@ export const platos = {
             fr: "Au four à bois. | 8 unités ",
             de: "Im Holzofen gebacken | 8 Stück",
             it: "Al forno a legna | 8 unità",
-    },
+        },
     },
 
-     croquetas: {
-        precio: "11.80",
+    croquetas: {
+        precio: "11.30",
         foto: "croquetas.jpg",
         alergenos: ["gluten", "huevos", "lacteos"],
-
-    nombres:{
+        nombres:{
             es: "Croquetas",
             en: "Croquettes",
             fr: "Croquettes",
@@ -159,12 +156,12 @@ export const platos = {
             fr: "Croquettes de jambon avec pommes paille | 6 unités",
             de: "Schinkenkroketten mit Strohkartoffeln | 6 Stück",
             it: "Di prosciutto con patatine paglia | 6 unità",
-    },
+        },
     },
 
     // === MARISCOS ===
     arrozNegro: {
-        precio: "25.80",
+        precio: "24.50",
         foto: "arroz_negro.jpg",
         alergenos: ["pescado", "crustaceos", "moluscos"],
         nombres:{
@@ -180,7 +177,7 @@ export const platos = {
             fr: "Aux calamars locaux, thon, palourdes et crevettes.",
             de: "Mit Tintenfisch, Thunfisch, Muscheln und Garnelen",
             it: "Con calamari locali, tonno, vongole e mazzancolle"
-    },
+        },
     },
 
     arrozBogavante: {
@@ -200,11 +197,11 @@ export const platos = {
             fr: "Aux palourdes et queues de crevettes",
             de: "Mit Muscheln und Garnelenschwänzen",
             it: "Con vongole e code di mazzancolle."
-    },
+        },
     },
 
     arrozMarineiro: {
-        precio: "22.00",
+        precio: "21.00",
         foto: "arroz_marineiro.jpg",
         alergenos: ["pescado", "crustaceos", "moluscos"],
         nombres:{
@@ -220,11 +217,11 @@ export const platos = {
             fr: "Aux fruits de mer variés.",
             de: "Mit verschiedenen Meeresfrüchten",
             it: "Con frutti di mare assortiti."
-    },
+        },
     },
 
     fidegua: {
-        precio: "22.00",
+        precio: "21.00",
         foto: "fidegua.jpg",
         alergenos: ["pescado", "crustaceos", "moluscos", "gluten"],
         nombres:{
@@ -240,15 +237,15 @@ export const platos = {
             fr: "Fines nouilles aux fruits de mer variés.",
             de: "Traditionelle Nudelpfanne mit Meeresfrüchten.",
             it: "Pasta corta tradizionale con frutti di mare assortiti."
-    },
+        },
     },
 
     // === CARNES ===
     cochinillo: {
-        precio: "23.50",
+        precio: "22.50",
         foto: "cochinillo.jpg",
         alergenos: [],
-       nombres:{
+        nombres:{
             es: "Cochinillo",
             en: "Suckling Pig",
             fr: "Cochon de Lait",
@@ -261,35 +258,34 @@ export const platos = {
             fr: "Style Segoviano rôti au four à bois.",
             de: "Nach Segovia-Art im Holzofen gebraten",
             it: "In stile segoviano arrostito nel forno a legna"
-    },
+        },
     },
 
     solomillo: {
-        precio: "23.50",
+        precio: "21.80",
         foto: "solomillo.jpg",
-        desc_es: "De ternera al horno de leña con guarnición patatas",
         alergenos: [],
         nombres:{
             es: "Solomillo",
             en: "Beef Tenderloin",
             fr: "Filet de Bœuf",
             de: "Rinderfilet",
-            it: "Filetto di vitello al forno a legna con contorno di patate"
+            it: "Filetto di Manzo"
         },
         descripciones: {
             es: "De ternera al horno de leña con guarnición patatas",
             en: "Veal tenderloin roasted in a wood-fired oven with potato garnish.",
             fr: "Filet de veau au four à bois avec garniture de pommes de terre.",
             de: "Kalbsfilet aus dem Holzofen mit Kartoffelbeilage.",
-            it: "Filetto di Manzo"
-    },
+            it: "Filetto di vitello al forno a legna con contorno di patate"
+        },
     },
 
     solomilloRoquefort: {
-        precio: "23.80",
+        precio: "22.50",
         foto: "solomillo_roquefort.jpg",
         alergenos: ["lacteos"],
-       nombres:{
+        nombres:{
             es: "Solomillo Roquefort",
             en: "Roquefort Tenderloin",
             fr: "Filet au Roquefort",
@@ -302,11 +298,11 @@ export const platos = {
             fr: "Filet de veau avec sauce au fromage Roquefort.",
             de: "Kalbsfilet in Roquefort-Käsesauce.",
             it: "Filetto di vitello in salsa di formaggio Roquefort."
-    },
+        },
     },
 
     entrecot: {
-        precio: "21.80",
+        precio: "19.80",
         foto: "entrecot.jpg",
         alergenos: ["lacteos", "gluten"],
         nombres:{
@@ -322,11 +318,11 @@ export const platos = {
             fr: "Veau grillé ou avec sauce aux champignons.",
             de: "Gegrilltes Kalbfleisch oder mit Pilzsauce.",
             it: "Vitello alla brace o con salsa ai funghi."
-    },
+        },
     },
     // === PESCADOS ===
     rapeSugerencia: {
-        precio: "23.50",
+        precio: "22.50",
         foto: "rape.jpg",
         alergenos: ["pescado", "crustaceos", "moluscos"],
         nombres:{
@@ -342,11 +338,11 @@ export const platos = {
             fr: "À la sauce aux fruits de mer avec des palourdes locales.",
             de: "In Meeresfrüchtesauce mit lokalen Venusmuscheln.",
             it: "In salsa di mare con vongole locali."
-    },
+        },
     },
 
     lubinaSugerencia: {
-        precio: "23.00",
+        precio: "22.00",
         foto: "lubina.jpg",
         alergenos: ["pescado"],
         nombres:{
@@ -362,11 +358,11 @@ export const platos = {
             fr: "Bar sauvage au four à bois.",
             de: "Wilder Wolfsbarsch aus dem Holzofen.",
             it: "Branzino selvaggio al forno a legna."
-    },
+        },
     },
 
     bacalaoManzanos: {
-        precio: "22.80",
+        precio: "21.80",
         foto: "bacalao_manzanos.jpg",
         alergenos: ["pescado"],
         nombres:{
@@ -382,7 +378,7 @@ export const platos = {
             fr: "Cuite au four avec pommes de terre 'panadera'",
             de: "Im Ofen gebacken mit 'Panadera'-Kartoffeln.",
             it: "Al forno con patate 'panadera'."
-    },
+        },
     },
 
     bacalaoDourado: {
@@ -402,218 +398,207 @@ export const platos = {
             fr: "Brouillade de morue, oignons et œufs.",
             de: "Rührei mit Kabeljau und Zwiebeln.",
             it: "Uova strapazzate con baccalà e cipolle."
-    },
+        },
     },
 
     // === PIZZAS ===
     pizzaMargarita: {
-        precio: "13.30",
-        foto: "pizza_margarita.jpg",
+        precio: "11.90",
         alergenos: ["gluten", "lacteos"],
         nombres:{
             es: "Pizza Margarita",
-            en: "Pizza Margarita",
-            fr: "Pizza Margarita",
-            de: "Pizza Margarita",
-            it: "Pizza Margarita",
-         },
-         descripciones: {
+            en: "Pizza Margherita",
+            fr: "Pizza Margherita",
+            de: "Pizza Margherita",
+            it: "Pizza Margherita",
+        },
+        descripciones: {
             es: "Aceitunas negras y orégano",
             en: "Black olives and oregano",
             fr: "Olives noires et origan",
             de: "Schwarze Oliven und Oregano.",
             it: "Olive nere e origano."
-    },
+        },
     },
     pizzaMixta: {
-        precio: "14.30",
-        foto: "mixta.jpg",
+        precio: "12.90",
         alergenos: ["gluten", "lacteos"],
-         nombres:{
+        nombres:{
             es: "Pizza Mixta",
-            en: "Pizza Mixta",
-            fr: "Pizza Mixta",
+            en: "Mixed Pizza",
+            fr: "Pizza Mixte",
             de: "Pizza Mixta",
-            it: "Pizza Mixta",
-         },
-         descripciones: {
+            it: "Pizza Mista",
+        },
+        descripciones: {
             es: "Aceitunas negras y jamón",
             en: "Black olives and ham",
             fr: "Olives noires et jambon",
             de: "Schwarze Oliven und Schinken.",
             it: "Olive nere e prosciutto."
-    },
+        },
     },
     pizzaCaprichosa: {
-        precio: "15.30",
-        foto: "caprichosa.jpg",
+        precio: "13.00",
         alergenos: ["gluten", "lacteos"],
-         nombres:{
+        nombres:{
             es: "Pizza Caprichosa",
-            en: "Pizza Caprichosa",
-            fr: "Pizza Caprichosa",
+            en: "Capricciosa Pizza",
+            fr: "Pizza Capricciosa",
             de: "Pizza Caprichosa",
-            it: "Pizza Caprichosa",
-         },
-         descripciones: {
+            it: "Pizza Capricciosa",
+        },
+        descripciones: {
             es: "Bacon y champiñones",
             en: "Bacon and mushrooms",
             fr: "Bacon et champignons",
             de: "Speck und Pilze",
             it: "Bacon e funghi."
-    },
+        },
     },
     pizzaCantabrica: {
-        precio: "15.80",
-        foto: "cantabrica.jpg",
+        precio: "14.50",
         alergenos: ["gluten", "lacteos", "pescado"],
-         nombres:{
+        nombres:{
             es: "Pizza Cantabrica",
-            en: "Pizza Cantabrica",
-            fr: "Pizza Cantabrica",
+            en: "Cantabrian Pizza",
+            fr: "Pizza Cantabrique",
             de: "Pizza Cantabrica",
             it: "Pizza Cantabrica",
-         },
-         descripciones: {
+        },
+        descripciones: {
             es: "Anchoas y pimientos del piquillo",
             en: "Anchovies and piquillo peppers",
             fr: "Anchois et poivrons piquillo",
             de: "Sardellen und Piquillo-Paprika",
             it: "Acciughe e Peperone rosso"
-    },
+        },
     },
     pizzaSiciliana: {
-        precio: "15.30",
-        foto: "siciliana.jpg",
+        precio: "13.50",
         alergenos: ["gluten", "lacteos"],
-         nombres:{
+        nombres:{
             es: "Pizza Siciliana",
-            en: "Pizza Siciliana",
-            fr: "Pizza Siciliana",
+            en: "Sicilian Pizza",
+            fr: "Pizza Sicilienne",
             de: "Pizza Siciliana",
             it: "Pizza Siciliana",
-         },
-         descripciones: {
+        },
+        descripciones: {
             es: "Berenjena y pimiento rojo",
             en: "Eggplant and red pepper",
             fr: "Aubergine et poivron rouge",
             de: "Aubergine und rote Paprika",
             it: "Melanzane e peperone rosso"
-    },
+        },
     },
     pizzaCuatroQuesos: {
-        precio: "15.30",
-        foto: "cuatro_quesos.jpg",
+        precio: "13.80",
         alergenos: ["gluten", "lacteos"],
-         nombres:{
+        nombres:{
             es: "Pizza 4 Quesos",
-            en: "Pizza 4 Quesos",
-            fr: "Pizza 4 Quesos",
-            de: "Pizza 4 Quesos",
-            it: "Pizza 4 Quesos",
-         },
-         descripciones: {
+            en: "Four Cheese Pizza",
+            fr: "Pizza 4 Fromages",
+            de: "Vier-Käse-Pizza",
+            it: "Pizza 4 Formaggi",
+        },
+        descripciones: {
             es: "Roquefort, parmesano y queso fresco",
             en: "Roquefort, Parmesan and fresh cheese",
             fr: "Roquefort, parmesan et fromage frais",
             de: "Roquefort, Parmesan und Frischkäse",
             it: "Roquefort, parmigiano e formaggio fresco."
-    },
+        },
     },
     pizzaDelPais: {
-        precio: "15.30",
-        foto: "pizza_del_pais.jpg",
+        precio: "13.80",
         alergenos: ["gluten", "lacteos"],
-         nombres:{
+        nombres:{
             es: "Pizza del País",
-            en: "Pizza del País",
-            fr: "Pizza del País",
-            de: "Pizza del País",
-            it: "Pizza del País",
-         },
-         descripciones: {
+            en: "Local Pizza",
+            fr: "Pizza du Pays",
+            de: "Pizza des Landes",
+            it: "Pizza del Paese",
+        },
+        descripciones: {
             es: "Chorizo gallego, ajo y guindilla",
             en: "Galician chorizo, garlic and chili pepper",
-            fr: "Chorizo ​​galicien, ail et piment",
+            fr: "Chorizo galicien, ail et piment",
             de: "Galicische Chorizo, Knoblauch und Chilischoten",
             it: "Chorizo galiziano, aglio e peperoncino."
-    },
+        },
     },
     pizzaAtlantica: {
-        precio: "15.30",
-        foto: "atlantica.jpg",
+        precio: "13.80",
         alergenos: ["gluten", "lacteos", "pescado"],
-         nombres:{
+        nombres:{
             es: "Pizza Atlantica",
-            en: "Pizza Atlantica",
-            fr: "Pizza Atlantica",
-            de: "Pizza Atlantica",
+            en: "Atlantic Pizza",
+            fr: "Pizza Atlantique",
+            de: "Atlantische Pizza",
             it: "Pizza Atlantica",
-         },
-         descripciones: {
+        },
+        descripciones: {
             es: "Bonito y cebolla",
             en: "Bonito and onion",
             fr: "Bonite et oignon",
             de: "Bonito und Zwiebeln",
             it: "Tonno e cipolla."
-    },
+        },
     },
     pizzaCampista: {
-        precio: "15.80",
-        foto: "campista.jpg",
+        precio: "14.50",
         alergenos: ["gluten", "lacteos", "huevos"],
-         nombres:{
+        nombres:{
             es: "Pizza Campista",
-            en: "Pizza Campista",
+            en: "Campista Pizza",
             fr: "Pizza Campista",
             de: "Pizza Campista",
             it: "Pizza Campista",
-         },
-         descripciones: {
+        },
+        descripciones: {
             es: "Jamón, champiñones y huevo",
             en: "Ham, mushrooms and egg",
             fr: "Jambon, champignons et œuf",
-            de: "Ammoniak, Pilze und Ei",
+            de: "Schinken, Pilze und Ei",
             it: "Prosciutto, funghi e uovo."
-    },
+        },
     },
     pizzaTresSabores: {
-        precio: "15.80",
-        foto: "3sabores.jpg",
+        precio: "14.50",
         alergenos: ["gluten", "lacteos"],
-         nombres:{
+        nombres:{
             es: "Pizza 3 Sabores",
-            en: "Pizza 3 Sabores",
-            fr: "Pizza 3 Sabores",
-            de: "Pizza 3 Sabores",
-            it: "Pizza 3 Sabores",
-         },
-         descripciones: {
+            en: "Three Flavours Pizza",
+            fr: "Pizza 3 Saveurs",
+            de: "Drei-Geschmäcker-Pizza",
+            it: "Pizza 3 Sapori",
+        },
+        descripciones: {
             es: "Bacon, chorizo y roquefort",
-            en: "Bacon, chorizo y roquefort",
-            fr: "Bacon, chorizo ​​et Roquefort",
-            de: "Speck, Chorizo ​​und Roquefort",
+            en: "Bacon, chorizo and roquefort",
+            fr: "Bacon, chorizo et Roquefort",
+            de: "Speck, Chorizo und Roquefort",
             it: "Bacon, chorizo e roquefort."
-    },
+        },
     },
     pizzaVegetariana: {
-        precio: "14.80",
-        foto: "vegetariana.jpg",
+        precio: "13.50",
         alergenos: ["gluten", "lacteos"],
-         nombres:{
+        nombres:{
             es: "Pizza Vegetariana",
-            en: "Pizza Vegetariana",
-            fr: "Pizza Vegetariana",
-            de: "Pizza Vegetariana",
+            en: "Vegetarian Pizza",
+            fr: "Pizza Végétarienne",
+            de: "Vegetarische Pizza",
             it: "Pizza Vegetariana",
-         },
-         descripciones: {
+        },
+        descripciones: {
             es: "Verduras de temporada",
-            en: "seasonal vegetables",
-            fr: "légumes de saison",
+            en: "Seasonal vegetables",
+            fr: "Légumes de saison",
             de: "Gemüse der Saison",
             it: "Verdure di stagione."
-    },
+        },
     },
 
     // === POSTRES ===
@@ -634,7 +619,7 @@ export const platos = {
             fr: "Avec crème chantilly et marron glacé.",
             de: "Mit Sahne und Marron Glacé.",
             it: "Con panna e marron glacé."
-    },
+        },
     },
     tocinilloCielo: {
         precio: "5.50",
@@ -653,7 +638,7 @@ export const platos = {
             fr: "Flan aux œufs avec délice de fromage et chocolat.",
             de: "Mit Käse- und Schokoladengenuss.",
             it: "Budino di tuorli con delizia di formaggio e cioccolato."
-    },
+        },
     },
     brownie: {
         precio: "6.00",
@@ -672,7 +657,7 @@ export const platos = {
             fr: "Aux noix et glace vanille.",
             de: "Mit Walnüssen und Vanilleeis.",
             it: "Con noci e gelato alla vaniglia."
-    },
+        },
     },
     tartaQueso: {
         precio: "5.60",
@@ -691,7 +676,7 @@ export const platos = {
             fr: "Avec coulis de fruits rouges.",
             de: "Mit Beeren-Coulis.",
             it: "Con coulis ai frutti rossi."
-    },
+        },
     },
     heladosSurtidos: {
         precio: "7.80",
@@ -710,13 +695,13 @@ export const platos = {
             fr: "Artisanales avec tuile aux amandes.",
             de: "Hausgemacht mit Mandelgebäck (Teja).",
             it: "Artigianali con tegola di mandorle."
-    },
+        },
     },
     tiramisu: {
         precio: "5.90",
         foto: "tiramisu.jpg",
         alergenos: ["lacteos", "gluten"],
-       nombres:{
+        nombres:{
             es: "Tiramisu",
             en: "Tiramisu",
             fr: "Tiramisu",
@@ -729,13 +714,13 @@ export const platos = {
             fr: "Fait maison avec glace aux fruits rouges.",
             de: "Hausgemacht mit Beereneis.",
             it: "Fatto in casa con gelato ai frutti rossi."
-    },
+        },
     },
     heladoDulceLeche: {
         precio: "5.60",
         foto: "dulce-leche.jpg",
         alergenos: ["lacteos", "frutos-secos"],
-       nombres:{
+        nombres:{
             es: "Helado de dulce de leche",
             en: "Dulce de Leche Ice Cream",
             fr: "Glace au Dulce de Leche",
@@ -748,7 +733,7 @@ export const platos = {
             fr: "Avec des noix.",
             de: "Mit Walnüssen.",
             it: "Con noci."
-    },
+        },
     },
     falsoTomate: {
         precio: "6.70",
@@ -767,11 +752,11 @@ export const platos = {
             fr: "Vanille et glace aux agrumes.",
             de: "Vanille und Zitruseis.",
             it: "Vaniglia e gelato agli agrumi."
-    },
+        },
     },
     bolaHelado: {
         precio: "3.50",
-        foto: "bola-helado.jpg", // Puedes usar la misma de helados si no tienes una específica
+        foto: "helados.jpg",
         alergenos: ["lacteos"],
         nombres:{
             es: "Bola Individual de helado Artesanal",
@@ -786,165 +771,154 @@ export const platos = {
             fr: "Parfums : Citron, Mandarine, Chocolat, Fraise, Fruits des bois ou Framboise. (prix par boule)",
             de: "Sorten: Zitrone, Mandarine, Schokolade, Erdbeere, Waldfrüchte oder Himbeere. (Preis pro Kugel)",
             it: "Gusti: Limone, Mandarino, Cioccolato, Fragola, Frutti di bosco o Lampone. (prezzo per pallina)"
-    },
+        },
     },
     // === VINOS: COPAS ===
     copaAlbarino: { 
         precioCopa: "3.50", 
-        alergenos: [] ,
+        alergenos: [],
         nombres: {
-             es: "Copa de Albariño",
-             en: "Glass of Albariño" ,
-             fr: "Verre à vin d'Albariño" ,
-             de: "Ein Glas Albariño" ,
-             it: "Bicchiere da Albariño" ,
-
-            },
+            es: "Copa de Albariño",
+            en: "Glass of Albariño",
+            fr: "Verre d'Albariño",
+            de: "Ein Glas Albariño",
+            it: "Bicchiere di Albariño",
+        },
     },
-   
     copaGodello: {
         precioCopa: "3.50",
-         alergenos: [] ,
+        alergenos: [],
         nombres: {
-             es: "Copa de Godello", 
-             en: "Glass of Godello" ,
-             fr: "Verre à vin d'Godello" ,
-             de: "Ein Glas Godello" ,
-             it: "Bicchiere da Godello" ,
-            },
+            es: "Copa de Godello",
+            en: "Glass of Godello",
+            fr: "Verre de Godello",
+            de: "Ein Glas Godello",
+            it: "Bicchiere di Godello",
+        },
     },
-    
     copaRibeiro: {
         precioCopa: "3.50",
-         alergenos: [] ,
+        alergenos: [],
         nombres: {
-             es: "Copa de Ribeiro",
-             en: "Glass of Ribeiro" ,
-             fr: "Verre à vin d'Ribeiro " ,
-             de: "Ein Glas Ribeiro" ,
-             it: "Bicchiere da Ribeiro" ,
-            },
+            es: "Copa de Ribeiro",
+            en: "Glass of Ribeiro",
+            fr: "Verre de Ribeiro",
+            de: "Ein Glas Ribeiro",
+            it: "Bicchiere di Ribeiro",
+        },
     },
-
     copaRibera: {
         precioCopa: "3.50",
-         alergenos: [] ,
+        alergenos: [],
         nombres: {
-             es: "Copa de Ribera del Duero",
-             en: "Glass of Ribera del Duero" ,
-             fr: "Verre à vin d'Ribera del Duero " ,
-             de: "Ein Glas Ribera del Duero" ,
-             it: "Bicchiere da Ribera del Duero" ,
-            },
+            es: "Copa de Ribera del Duero",
+            en: "Glass of Ribera del Duero",
+            fr: "Verre de Ribera del Duero",
+            de: "Ein Glas Ribera del Duero",
+            it: "Bicchiere di Ribera del Duero",
+        },
     },
-
     copaRioja: {
         precioCopa: "3.50",
-         alergenos: [] ,
+        alergenos: [],
         nombres: {
-             es: "Copa de Rioja",
-             en: "Glass of Rioja" ,
-             fr: "Verre à vin d'Rioja " ,
-             de: "Ein Glas Rioja" ,
-             it: "Bicchiere da Rioja" ,
-            },
+            es: "Copa de Rioja",
+            en: "Glass of Rioja",
+            fr: "Verre de Rioja",
+            de: "Ein Glas Rioja",
+            it: "Bicchiere di Rioja",
+        },
     },
-
     copaMencia: {
         precioCopa: "3.50",
-         alergenos: [] ,
+        alergenos: [],
         nombres: {
-             es: "Copa de Mencia",
-             en: "Glass of Mencia" ,
-             fr: "Verre à vin d'Mencia " ,
-             de: "Ein Glas Mencia" ,
-             it: "Bicchiere da Mencia" ,
-            },
+            es: "Copa de Mencia",
+            en: "Glass of Mencía",
+            fr: "Verre de Mencía",
+            de: "Ein Glas Mencía",
+            it: "Bicchiere di Mencía",
+        },
     },
 
     // === VINOS TINTOS ===
     rebolledo: {
-        precio34: "17.50", // Precio base 3/4
+        precio34: "17.50",
         precioMagnum: "32.00",
         denominacion: "VALDEORRAS",
         alergenos: [],
         nombres: {
-             es: "Joaquín Rebolledo",
-             en: "Joaquín Rebolledo" ,
-             fr: "Joaquín Rebolledo" ,
-             de: "Joaquín Rebolledo" ,
-             it: "Joaquín Rebolledo" ,
-            },
+            es: "Joaquín Rebolledo",
+            en: "Joaquín Rebolledo",
+            fr: "Joaquín Rebolledo",
+            de: "Joaquín Rebolledo",
+            it: "Joaquín Rebolledo",
+        },
         descripciones: {
             es: "Mencía de montaña, mineral y elegante.",
             en: "A mountain Mencía, mineral and elegant.",
             fr: "Un Mencía de montagne, minéral et élégant.",
             de: "Ein mineralischer und eleganter Mencía aus den Bergen.",
-            it: "Mencía di montagna, minerale ed elegante."
-    },
+            it: "Mencía di montagna, minerale ed elegante.",
+        },
     },
     abadiaCova: {
-        precio34: "19.00",
+        precio34: "19.50",
         denominacion: "RIBEIRA SACRA",
         alergenos: [],
         nombres: {
-             es: "Abadía da Cova",
-             en: "Abadía da Cova" ,
-             fr: "Abadía da Cova" ,
-             de: "Abadía da Cova" ,
-             it: "Abadía da Cova" ,
-            },
+            es: "Abadía da Cova",
+            en: "Abadía da Cova",
+            fr: "Abadía da Cova",
+            de: "Abadía da Cova",
+            it: "Abadía da Cova",
+        },
         descripciones: {
             es: "Mencía de viñas viejas, floral y especiado.",
             en: "Mencía from old vines, floral and spicy.",
             fr: "Mencía issu de vieilles vignes, aux arômes floraux et épicés.",
             de: "Mencía aus alten Rebstöcken, blumig und würzig.",
-            it: "Mencía da vecchi vigneti, floreale e speziato."
-        
-    },
+            it: "Mencía da vecchi vigneti, floreale e speziato.",
+        },
     },
     cregoMonaguillo: {
-        precio34: "17.80",
+        precio34: "17.50",
         denominacion: "MONTERREY",
         alergenos: [],
         nombres: {
-             es: "Crego e Monaguillo",
-             en: "Crego e Monaguillo " ,
-             fr: "Crego e Monaguillo " ,
-             de: "Crego e Monaguillo " ,
-             it: "Crego e Monaguillo " ,
-            },
+            es: "Crego e Monaguillo",
+            en: "Crego e Monaguillo",
+            fr: "Crego e Monaguillo",
+            de: "Crego e Monaguillo",
+            it: "Crego e Monaguillo",
+        },
         descripciones: {
             es: "Mencía joven, fruta roja vibrante.",
             en: "Young Mencía, vibrant red fruit.",
             fr: "Une Mencía jeune, aux arômes de fruits rouges éclatants.",
             de: "Junger Mencía, lebhafte rote Beeren.",
-            it: "Mencía giovane, con vivaci note di frutti rossi."
-        
+            it: "Mencía giovane, con vivaci note di frutti rossi.",
+        },
     },
-    },
-
     castroLobarzan: {
         precio34: "20.00",
         denominacion: "MONTERREY",
-        alergenos:  [],
+        alergenos: [],
         nombres: {
-             es: "Castro de Lobarzán",
-             en: "Castro de Lobarzán " ,
-             fr: "Castro de Lobarzán" ,
-             de: "Castro de Lobarzán" ,
-             it: "Castro de Lobarzán" ,
-            },
+            es: "Castro de Lobarzán",
+            en: "Castro de Lobarzán",
+            fr: "Castro de Lobarzán",
+            de: "Castro de Lobarzán",
+            it: "Castro de Lobarzán",
+        },
         descripciones: {
             es: "Mencía estructurado, paso por roble.",
             en: "A full-bodied Mencía, aged in oak.",
             fr: "Mencía structuré, élevé en fûts de chêne.",
             de: "Strukturierter Mencía, in Eichenfässern gereift.",
-            it: "Mencía strutturato, affinato in rovere."
-        
+            it: "Mencía strutturato, affinato in rovere.",
+        },
     },
-    },
-
     campillo: {
         precio34: "21.00",
         precio12: "14.00",
@@ -952,20 +926,19 @@ export const platos = {
         denominacion: "RIOJA",
         alergenos: [],
         nombres: {
-             es: "Campillo",
-             en: "Campillo" ,
-             fr: "Campillo" ,
-             de: "Campillo" ,
-             it: "Campillo" ,
-            },
+            es: "Campillo",
+            en: "Campillo",
+            fr: "Campillo",
+            de: "Campillo",
+            it: "Campillo",
+        },
         descripciones: {
             es: "Reserva elegante, clásico y con notas de madera noble.",
             en: "An elegant, classic reserve with notes of fine wood.",
             fr: "Une cuvée élégante et classique, aux notes de bois précieux.",
             de: "Ein eleganter, klassischer Reserva mit Noten von Edelholz.",
-            it: "Un vino elegante, classico, con note di legno pregiato."
-        
-    },
+            it: "Un vino elegante, classico, con note di legno pregiato.",
+        },
     },
     ramonBilbao: {
         precio34: "19.50",
@@ -973,421 +946,363 @@ export const platos = {
         denominacion: "RIOJA",
         alergenos: [],
         nombres: {
-             es: "Ramón Bilbao",
-             en: "Ramón Bilbao" ,
-             fr: "Ramón Bilbao" ,
-             de: "Ramón Bilbao" ,
-             it: "Ramón Bilbao" ,
-            },
+            es: "Ramón Bilbao",
+            en: "Ramón Bilbao",
+            fr: "Ramón Bilbao",
+            de: "Ramón Bilbao",
+            it: "Ramón Bilbao",
+        },
         descripciones: {
             es: "Moderno y afrutado, muy versátil",
             en: "Modern and fruity, very versatile",
             fr: "Moderne et fruité, très polyvalent",
             de: "Modern und fruchtig, sehr vielseitig",
-            it: "Moderno e fruttato, molto versatile"
-        
-    },
+            it: "Moderno e fruttato, molto versatile",
+        },
     },
     baigorri: {
         precio34: "22.50",
         denominacion: "RIOJA",
-        alergenos:  [],
+        alergenos: [],
         nombres: {
-             es: "Baigorri",
-             en: "Baigorri" ,
-             fr: "Baigorri" ,
-             de: "Baigorri" ,
-             it: "Baigorri" ,
-            },
+            es: "Baigorri",
+            en: "Baigorri",
+            fr: "Baigorri",
+            de: "Baigorri",
+            it: "Baigorri",
+        },
         descripciones: {
             es: "Crianza de coupage seleccionado, taninos sedosos.",
             en: "A blend of carefully selected wines, with silky tannins.",
             fr: "Élevage d'un assemblage sélectionné, aux tanins soyeux.",
             de: "Ausgewählte Cuvée, seidige Tannine.",
-            it: "Affinamento di un blend selezionato, con tannini setosi."
-        
-    },
+            it: "Affinamento di un blend selezionato, con tannini setosi.",
+        },
     },
     azpilicueta: {
         precio34: "17.50",
-        precioMagnum: "34.00",
+        precioMagnum: "42.00",
         denominacion: "RIOJA",
-        alergenos:  [],
+        alergenos: [],
         nombres: {
-             es: "Azpilicueta",
-             en: "Azpilicueta" ,
-             fr: "Azpilicueta" ,
-             de: "Azpilicueta" ,
-             it: "Azpilicueta" ,
-            },
+            es: "Azpilicueta",
+            en: "Azpilicueta",
+            fr: "Azpilicueta",
+            de: "Azpilicueta",
+            it: "Azpilicueta",
+        },
         descripciones: {
             es: "Tradición y modernidad en equilibrio.",
             en: "A balance between tradition and modernity.",
             fr: "Un équilibre entre tradition et modernité.",
             de: "Tradition und Moderne im Gleichgewicht.",
-            it: "Tradizione e modernità in perfetto equilibrio."
-        
-    },
-    },
-     luiscañas: {
-        precio34: "21.00",
-        denominacion: "RIOJA",
-        alergenos:  [],
-        nombres: {
-             es: "Luiz Cañas",
-             en: "Luiz Cañas" ,
-             fr: "Luiz Cañas" ,
-             de: "Luiz Cañas" ,
-             it: "Luiz Cañas" ,
-            },
-        descripciones: {
-            es: "Esfuerzo, tesón, pasión orientada al viñedo",
-            en: "Effort, tenacity, and a passion for the vineyard.",
-            fr: "Effort, ténacité et passion tournée vers le vignoble.",
-            de: "Anstrengung, Beharrlichkeit und Leidenschaft für den Weinberg.",
-            it: "Impegno, tenacia e passione orientata al vigneto."
-     },
+            it: "Tradizione e modernità in perfetto equilibrio.",
+        },
     },
     ramonBilbaoLimitada: {
-        precio34: "22.00",
+        precio34: "22.80",
         precioMagnum: "42.00",
         denominacion: "VENDIMIAS SELECCIONADAS",
-        alergenos:  [],
+        alergenos: [],
         nombres: {
-             es: "Ramón Bilbao Ed. Limitada ",
-             en: "Ramón Bilbao Ed. Limitada " ,
-             fr: "Ramón Bilbao Ed. Limitada " ,
-             de: "Ramón Bilbao Ed. Limitada " ,
-             it: "Ramón Bilbao Ed. Limitada " ,
-            },
+            es: "Ramón Bilbao Ed. Limitada",
+            en: "Ramón Bilbao Ed. Limitada",
+            fr: "Ramón Bilbao Ed. Limitada",
+            de: "Ramón Bilbao Ed. Limitada",
+            it: "Ramón Bilbao Ed. Limitada",
+        },
         descripciones: {
             es: "Selección de las mejores parcelas.",
             en: "Selection of the best plots.",
             fr: "Sélection des meilleurs terrains.",
             de: "Auswahl der besten Grundstücke.",
-            it: "Selezione dei migliori appezzamenti."
-        
-    },
+            it: "Selezione dei migliori appezzamenti.",
+        },
     },
     lanD12: {
         precio34: "20.00",
         denominacion: "VENDIMIAS SELECCIONADAS",
         alergenos: [],
         nombres: {
-             es: "Lan D-12",
-             en: "Lan D-12" ,
-             fr: "Lan D-12" ,
-             de: "Lan D-12" ,
-             it: "Lan D-12" ,
-            },
+            es: "Lan D-12",
+            en: "Lan D-12",
+            fr: "Lan D-12",
+            de: "Lan D-12",
+            it: "Lan D-12",
+        },
         descripciones: {
             es: "Crianza extensa, gran potencial.",
             en: "Extended ageing, great potential.",
             fr: "Vieux vin, grand potentiel.",
             de: "Langer Ausbau, großes Potenzial.",
-            it: "Lunga maturazione, grande potenziale."
-        
-    },
+            it: "Lunga maturazione, grande potenziale.",
+        },
     },
     lanMano: {
         precio34: "34.50",
         denominacion: "VENDIMIAS SELECCIONADAS",
         alergenos: [],
         nombres: {
-             es: "Lan a Mano ",
-             en: "Lan a Mano " ,
-             fr: "Lan a Mano " ,
-             de: "Lan a Mano " ,
-             it: "Lan a Mano " ,
-            },
+            es: "Lan a Mano",
+            en: "Lan a Mano",
+            fr: "Lan a Mano",
+            de: "Lan a Mano",
+            it: "Lan a Mano",
+        },
         descripciones: {
             es: "Elaboración artesanal, muy exclusivo.",
             en: "Handcrafted, highly exclusive.",
             fr: "Fabrication artisanale, très exclusive.",
             de: "Handwerkliche Herstellung, sehr exklusiv.",
-            it: "Produzione artigianale, molto esclusiva."
-        
-    },
-    },
-     ramonBilbaoReserva: {
-        precio34: "21.00",
-        denominacion: "GRANDES VINOS",
-        alergenos:  [],
-        nombres: {
-             es: "Ramón Bilbao Reserva ",
-             en: "Ramón Bilbao Reserva " ,
-             fr: "Ramón Bilbao Reserva " ,
-             de: "Ramón Bilbao Reserva " ,
-             it: "Ramón Bilbao Reserva " ,
-            },
-        descripciones: {
-            es: "Vino equilibrado y con sutiles notas de crianza.",
-            en: "Balanced wine with subtle notes of aging.",
-            fr: "Vin équilibré aux subtiles notes d'élevage.",
-            de: "Ausgewogener Wein mit subtilen Reifenoten.",
-            it: "Vino equilibrato con sottili note di affinamento."
+            it: "Produzione artigianale, molto esclusiva.",
         },
-     },
-    
+    },
     fincaValpiedra: {
         precio34: "26.00",
         denominacion: "GRANDES VINOS",
         alergenos: [],
         nombres: {
-             es: "Finca Valpiedra",
-             en: "Finca Valpiedra" ,
-             fr: "Finca Valpiedra" ,
-             de: "Finca Valpiedra" ,
-             it: "Finca Valpiedra" ,
-            },
+            es: "Finca Valpiedra",
+            en: "Finca Valpiedra",
+            fr: "Finca Valpiedra",
+            de: "Finca Valpiedra",
+            it: "Finca Valpiedra",
+        },
         descripciones: {
             es: "Vino de pago, mineral y complejo.",
             en: "A single vineyard wine, mineral and complex.",
             fr: "Un vin d'appellation, minéral et complexe.",
             de: "Ein Spitzenwein, mineralisch und komplex.",
-            it: "Vino di qualità, minerale e complesso."
-        
-    },
+            it: "Vino di qualità, minerale e complesso.",
+        },
     },
     quintaTarsus: {
         precio34: "22.00",
         denominacion: "RIBERA DEL DUERO",
         alergenos: [],
         nombres: {
-             es: "Quinta de Tarsus",
-             en: "Quinta de Tarsus" ,
-             fr: "Quinta de Tarsus" ,
-             de: "Quinta de Tarsus" ,
-             it: "Quinta de Tarsus" ,
-            },
+            es: "Quinta de Tarsus",
+            en: "Quinta de Tarsus",
+            fr: "Quinta de Tarsus",
+            de: "Quinta de Tarsus",
+            it: "Quinta de Tarsus",
+        },
         descripciones: {
             es: "Tinto joven, fruta negra intensa",
             en: "Young red wine, with intense black fruit",
             fr: "Vin rouge jeune, aux arômes intenses de fruits noirs",
             de: "Junger Rotwein, intensive Noten von schwarzen Beeren",
-            it: "Vino rosso giovane, con intense note di frutta nera"
-        
-    },
+            it: "Vino rosso giovane, con intense note di frutta nera",
+        },
     },
     manchonMieres: {
-        precio34: "29.50",
+        precio34: "29.00",
         denominacion: "RIBERA DEL DUERO",
         alergenos: [],
         nombres: {
-             es: "47 Manchon Mieres",
-             en: "47 Manchon Mieres" ,
-             fr: "47 Manchon Mieres" ,
-             de: "47 Manchon Mieres" ,
-             it: "47 Manchon Mieres" ,
-            },
+            es: "47 Manchon Mieres",
+            en: "47 Manchon Mieres",
+            fr: "47 Manchon Mieres",
+            de: "47 Manchon Mieres",
+            it: "47 Manchon Mieres",
+        },
         descripciones: {
             es: "Crianza prolongada, gran estructura",
             en: "Extended ageing, great structure",
             fr: "Élevage prolongé, belle structure",
             de: "Lange Reifezeit, großartige Struktur",
-            it: "Lunga maturazione, ottima struttura"
-        
-    },
+            it: "Lunga maturazione, ottima struttura",
+        },
     },
     vilano: {
-        precio34: "22.00",
+        precio34: "21.00",
         denominacion: "RIBERA DEL DUERO",
         alergenos: [],
         nombres: {
-             es: "Vilano 57",
-             en: "Vilano 57" ,
-             fr: "Vilano 57" ,
-             de: "Vilano 57" ,
-             it: "Vilano 57" ,
-            },
+            es: "Vilano",
+            en: "Vilano",
+            fr: "Vilano",
+            de: "Vilano",
+            it: "Vilano",
+        },
         descripciones: {
             es: "Tempranillo expresivo, taninos redondos",
             en: "An expressive Tempranillo with smooth tannins",
             fr: "Un Tempranillo expressif, aux tanins ronds",
             de: "Ein ausdrucksstarker Tempranillo mit runden Tanninen",
-            it: "Tempranillo espressivo, con tannini morbidi"
-        
-    },
+            it: "Tempranillo espressivo, con tannini morbidi",
+        },
     },
     matasnos: {
-        precio34: "39.00",
+        precio34: "38.00",
         denominacion: "RIBERA DEL DUERO",
         alergenos: [],
         nombres: {
-             es: "Bosque de Matasnos",
-             en: "Bosque de Matasnos" ,
-             fr: "Bosque de Matasnos" ,
-             de: "Bosque de Matasnos" ,
-             it: "Bosque de Matasnos" ,
-            },
+            es: "Bosque de Matasnos",
+            en: "Bosque de Matasnos",
+            fr: "Bosque de Matasnos",
+            de: "Bosque de Matasnos",
+            it: "Bosque de Matasnos",
+        },
         descripciones: {
             es: "Personalidad única, terruño marcado",
             en: "A unique character, a distinctive terroir",
             fr: "Une personnalité unique, un terroir affirmé",
             de: "Einzigartiger Charakter, ausgeprägtes Terroir",
-            it: "Personalità unica, territorio caratteristico"
-        
-    },
+            it: "Personalità unica, territorio caratteristico",
+        },
     },
     velilla: {
-        precio34: "19.50",
+        precio34: "20.50",
         denominacion: "RIBERA DEL DUERO",
         alergenos: [],
         nombres: {
-             es: "Marqués de Velilla",
-             en: "Marqués de Velilla" ,
-             fr: "Marqués de Velilla" ,
-             de: "Marqués de Velilla" ,
-             it: "Marqués de Velilla" ,
-            },
+            es: "Marqués de Velilla",
+            en: "Marqués de Velilla",
+            fr: "Marqués de Velilla",
+            de: "Marqués de Velilla",
+            it: "Marqués de Velilla",
+        },
         descripciones: {
             es: "Clásico de la Ribera, nobleza",
             en: "Ribera Classic, Nobility",
             fr: "Un classique de la Ribera, la noblesse",
             de: "Ein Klassiker aus der Ribera, edel",
-            it: "Il Classico della Ribera, nobiltà"
-        
-    },
+            it: "Il Classico della Ribera, nobiltà",
+        },
     },
     fincaVallejo: {
         precio34: "16.50",
         denominacion: "RIBERA DEL DUERO",
         alergenos: [],
         nombres: {
-             es: "Finca Vallejo",
-             en: "Finca Vallejo" ,
-             fr: "Finca Vallejo" ,
-             de: "Finca Vallejo" ,
-             it: "Finca Vallejo" ,
-            },
+            es: "Finca Vallejo",
+            en: "Finca Vallejo",
+            fr: "Finca Vallejo",
+            de: "Finca Vallejo",
+            it: "Finca Vallejo",
+        },
         descripciones: {
             es: "Tinto joven, fruta fresca y tostados suaves",
             en: "A young red wine with fresh fruit and subtle toasted notes",
             fr: "Vin rouge jeune, aux arômes de fruits frais et de notes grillées légères",
             de: "Ein junger Rotwein mit Noten von frischen Früchten und sanften Röstnoten",
-            it: "Vino rosso giovane, con note di frutta fresca e lievi sentori tostati"
-        
-    },
+            it: "Vino rosso giovane, con note di frutta fresca e lievi sentori tostati",
+        },
     },
     malabrigo: {
-        precio34: "46.00",
+        precio34: "48.00",
         denominacion: "PREMIUM SELECTION",
         alergenos: [],
         nombres: {
-             es: "Malabrigo Cepa 21",
-             en: "Malabrigo Cepa 21" ,
-             fr: "Malabrigo Cepa 21" ,
-             de: "Malabrigo Cepa 21" ,
-             it: "Malabrigo Cepa 21" ,
-            },
+            es: "Malabrigo Cepa 21",
+            en: "Malabrigo Cepa 21",
+            fr: "Malabrigo Cepa 21",
+            de: "Malabrigo Cepa 21",
+            it: "Malabrigo Cepa 21",
+        },
         descripciones: {
             es: "Selección de cepas centenarias",
             en: "A selection of century-old vines",
             fr: "Sélection de cépages centenaires",
             de: "Auswahl hundertjähriger Rebstöcke",
-            it: "Selezione di viti centenarie"
-        
-    },
+            it: "Selezione di viti centenarie",
+        },
     },
     pagoSantaCruz: {
-        precio34: "58.00",
+        precio34: "56.00",
         denominacion: "PREMIUM SELECTION",
         alergenos: [],
         nombres: {
-             es: "Pago de Santa Cruz",
-             en: "Pago de Santa Cruz" ,
-             fr: "Pago de Santa Cruz" ,
-             de: "Pago de Santa Cruz" ,
-             it: "Pago de Santa Cruz" ,
-            },
+            es: "Pago de Santa Cruz",
+            en: "Pago de Santa Cruz",
+            fr: "Pago de Santa Cruz",
+            de: "Pago de Santa Cruz",
+            it: "Pago de Santa Cruz",
+        },
         descripciones: {
             es: "Vino de autor, máxima expresión",
             en: "Signature wine, the ultimate expression",
             fr: "Vin d'auteur, l'expression ultime",
             de: "Einzigartiger Wein, der höchste Ausdruck",
-            it: "Vino d'autore, massima espressione"
-        
-    },
+            it: "Vino d'autore, massima espressione",
+        },
     },
     valOsa: {
         precio34: "26.00",
         denominacion: "BIERZO",
         alergenos: [],
         nombres: {
-             es: "Val de la Osa",
-             en: "Val de la Osa" ,
-             fr: "Val de la Osa" ,
-             de: "Val de la Osa" ,
-             it: "Val de la Osa" ,
-            },
+            es: "Val de la Osa",
+            en: "Val de la Osa",
+            fr: "Val de la Osa",
+            de: "Val de la Osa",
+            it: "Val de la Osa",
+        },
         descripciones: {
             es: "Mencía de altura, frescura y mineralidad",
             en: "A Mencía with depth, freshness and minerality",
-            fr: "Une Mencía qui se distingue par son élégance, sa fraîcheur et sa minéralité ",
+            fr: "Une Mencía qui se distingue par son élégance, sa fraîcheur et sa minéralité",
             de: "Ein Mencía mit Tiefe, Frische und Mineralität",
-            it: "Mencía caratterizzata da intensità, freschezza e mineralità"
-        
-    },
+            it: "Mencía caratterizzata da intensità, freschezza e mineralità",
+        },
     },
     petitPittacum: {
-        precio34: "14.50",
+        precio34: "14.00",
         denominacion: "BIERZO",
         alergenos: [],
         nombres: {
-             es: "Petit Pittacum",
-             en: "Petit Pittacum" ,
-             fr: "Petit Pittacum" ,
-             de: "Petit Pittacum" ,
-             it: "Petit Pittacum" ,
-            },
+            es: "Petit Pittacum",
+            en: "Petit Pittacum",
+            fr: "Petit Pittacum",
+            de: "Petit Pittacum",
+            it: "Petit Pittacum",
+        },
         descripciones: {
             es: "Mencía concentrado, fruta madura",
             en: "Concentrated Mencía, ripe fruit",
             fr: "Mencía concentré, fruit mûr",
             de: "Konzentrierter Mencía, reife Frucht",
-            it: "Mencía concentrato, frutta matura"
-        
-    },
+            it: "Mencía concentrato, frutta matura",
+        },
     },
     retuerta: {
-        precio34: "39.00",
+        precio34: "38.00",
         denominacion: "TIERRAS DE LEÓN",
         alergenos: [],
         nombres: {
-             es: "Abadía Retuerta Selección",
-             en: "Abadía Retuerta Selección" ,
-             fr: "Abadía Retuerta Selección" ,
-             de: "Abadía Retuerta Selección" ,
-             it: "Abadía Retuerta Selección" ,
-            },
+            es: "Abadía Retuerta Selección",
+            en: "Abadía Retuerta Selección",
+            fr: "Abadía Retuerta Selección",
+            de: "Abadía Retuerta Selección",
+            it: "Abadía Retuerta Selección",
+        },
         descripciones: {
             es: "Prieto Picudo, especiado y carnoso",
             en: "Prieto Picudo: spicy and meaty",
-            fr: "Prieto Picudo, épicé et charnu ",
+            fr: "Prieto Picudo, épicé et charnu",
             de: "Prieto Picudo, würzig und vollmundig",
-            it: "Prieto Picudo, speziato e corposo"
-        
-    },
+            it: "Prieto Picudo, speziato e corposo",
+        },
     },
     elPillo: {
         precio34: "20.00",
         denominacion: "TORO",
         alergenos: [],
         nombres: {
-             es: "El pillo",
-             en: "El pillo" ,
-             fr: "El pillo" ,
-             de: "El pillo" ,
-             it: "El pillo" ,
-            },
+            es: "El pillo",
+            en: "El pillo",
+            fr: "El pillo",
+            de: "El pillo",
+            it: "El pillo",
+        },
         descripciones: {
             es: "Tinta de Toro potente, carácter mediterráneo",
             en: "A full-bodied Tinta de Toro with a Mediterranean character",
             fr: "Un Tinta de Toro puissant, au caractère méditerranéen",
             de: "Kräftiger Tinta de Toro mit mediterranem Charakter",
-            it: "Tinta de Toro: corposo, dal carattere mediterraneo"
-        
-    },
+            it: "Tinta de Toro: corposo, dal carattere mediterraneo",
+        },
     },
 
     // === VINOS BLANCOS ===
@@ -1396,114 +1311,114 @@ export const platos = {
         denominacion: "RÍAS BAIXAS",
         alergenos: [],
         nombres: {
-             es: "Santiago Ruiz",
-             en: "Santiago Ruiz" ,
-             fr: "Santiago Ruiz" ,
-             de: "Santiago Ruiz" ,
-             it: "Santiago Ruiz" ,
-            },
+            es: "Santiago Ruiz",
+            en: "Santiago Ruiz",
+            fr: "Santiago Ruiz",
+            de: "Santiago Ruiz",
+            it: "Santiago Ruiz",
+        },
         descripciones: {
             es: "Albariño complejo, mineral y largo",
             en: "A complex, mineral and full-bodied Albariño",
             fr: "Un Albariño complexe, minéral et long en bouche",
             de: "Ein komplexer, mineralischer Albariño mit langem Abgang",
-            it: "Un Albariño complesso, minerale e persistente"
-    },   
+            it: "Un Albariño complesso, minerale e persistente",
+        },
     },
     bouzaDoRei: {
         precio34: "19.00",
         denominacion: "RÍAS BAIXAS",
         alergenos: [],
         nombres: {
-             es: "Bouza do Rei ",
-             en: "Bouza do Rei " ,
-             fr: "Bouza do Rei " ,
-             de: "Bouza do Rei " ,
-             it: "Bouza do Rei " ,
-            },
+            es: "Bouza do Rei",
+            en: "Bouza do Rei",
+            fr: "Bouza do Rei",
+            de: "Bouza do Rei",
+            it: "Bouza do Rei",
+        },
         descripciones: {
             es: "Albariño afrutado, muy versátil",
             en: "A fruity Albariño, highly versatile",
             fr: "Un albariño fruité, très polyvalent",
             de: "Ein fruchtiger Albariño, sehr vielseitig",
-            it: "Albariño fruttato, molto versatile"
-    },   
+            it: "Albariño fruttato, molto versatile",
+        },
     },
     terrasGauda: {
         precio34: "23.50",
         denominacion: "RÍAS BAIXAS",
         alergenos: [],
         nombres: {
-             es: "Terras Gauda",
-             en: "Terras Gauda" ,
-             fr: "Terras Gauda" ,
-             de: "Terras Gauda" ,
-             it: "Terras Gauda" ,
-            },
+            es: "Terras Gauda",
+            en: "Terras Gauda",
+            fr: "Terras Gauda",
+            de: "Terras Gauda",
+            it: "Terras Gauda",
+        },
         descripciones: {
             es: "Albariño intenso, notas cítricas",
             en: "A full-bodied Albariño with citrus notes",
             fr: "Un albariño intense, aux notes d'agrumes",
             de: "Ein vollmundiger Albariño mit Zitrusnoten",
-            it: "Albariño intenso, con note agrumate"
-    },   
+            it: "Albariño intenso, con note agrumate",
+        },
     },
     condeAlbarei: {
         precio34: "17.80",
         denominacion: "RÍAS BAIXAS",
         alergenos: [],
         nombres: {
-             es: "Conde de Albarei ",
-             en: "Conde de Albarei " ,
-             fr: "Conde de Albarei " ,
-             de: "Conde de Albarei " ,
-             it: "Conde de Albarei " ,
-            },
+            es: "Conde de Albarei",
+            en: "Conde de Albarei",
+            fr: "Conde de Albarei",
+            de: "Conde de Albarei",
+            it: "Conde de Albarei",
+        },
         descripciones: {
             es: "Albariño clásico, fresco y directo",
             en: "A classic Albariño, fresh and straightforward",
             fr: "Un albariño classique, frais et franc",
             de: "Ein klassischer, frischer und geradliniger Albariño",
-            it: "Un Albariño classico, fresco e diretto"
-    },   
+            it: "Un Albariño classico, fresco e diretto",
+        },
     },
     marDeFrades: {
-        precio34: "24.50",
+        precio34: "24.00",
         denominacion: "RÍAS BAIXAS",
         alergenos: [],
         nombres: {
-             es: "Mar de Frades",
-             en: "Mar de Frades" ,
-             fr: "Mar de Frades" ,
-             de: "Mar de Frades" ,
-             it: "Mar de Frades" ,
-            },
+            es: "Mar de Frades",
+            en: "Mar de Frades",
+            fr: "Mar de Frades",
+            de: "Mar de Frades",
+            it: "Mar de Frades",
+        },
         descripciones: {
             es: "Albariño elegante, toque salino",
             en: "Elegant Albariño, saline touch",
             fr: "Albariño élégant, touche saline",
             de: "Eleganter Albariño, salzige Note",
-            it: "Albariño elegante, tocco salino"
-    },   
+            it: "Albariño elegante, tocco salino",
+        },
     },
     casalDeArman: {
-        precio34: "22.50",
+        precio34: "22.00",
         denominacion: "RIBEIRO",
         alergenos: [],
         nombres: {
-             es: "Casal de Arman",
-             en: "Casal de Arman" ,
-             fr: "Casal de Arman" ,
-             de: "Casal de Arman" ,
-             it: "Casal de Arman" ,
-            },
+            es: "Casal de Arman",
+            en: "Casal de Arman",
+            fr: "Casal de Arman",
+            de: "Casal de Arman",
+            it: "Casal de Arman",
+        },
         descripciones: {
             es: "Treixadura pura, floral y delicado",
             en: "Pure Treixadura, floral and delicate",
             fr: "Treixadura pure, florale et délicate",
             de: "Reiner Treixadura, blumig und zart",
-            it: "Treixadura pura, floreale e delicato"
-    },   
+            it: "Treixadura pura, floreale e delicato",
+        },
     },
     vinaCosteira: {
         precio34: "14.80",
@@ -1511,193 +1426,173 @@ export const platos = {
         denominacion: "RIBEIRO",
         alergenos: [],
         nombres: {
-             es: "Viña Costeira",
-             en: "Viña Costeira" ,
-             fr: "Viña Costeira" ,
-             de: "Viña Costeira" ,
-             it: "Viña Costeira" ,
-            },
+            es: "Viña Costeira",
+            en: "Viña Costeira",
+            fr: "Viña Costeira",
+            de: "Viña Costeira",
+            it: "Viña Costeira",
+        },
         descripciones: {
             es: "Blanco joven, fruta blanca",
             en: "Young white wine, white fruit notes",
             fr: "Blanc jeune, notes de fruits blancs",
             de: "Junger Weißwein, weiße Fruchtnoten",
-            it: "Bianco giovane, note de frutta bianca"
-    },   
+            it: "Bianco giovane, note de frutta bianca",
+        },
     },
     cuatroFerrados: {
-        precio34: "19.80",
+        // FIX: era "precio", ahora es "precio34" para consistencia con DisenoBebida
+        precio34: "18.80",
         denominacion: "RIBEIRO",
         alergenos: [],
         nombres: {
-             es: "4 Ferrados",
-             en: "4 Ferrados" ,
-             fr: "4 Ferrados" ,
-             de: "4 Ferrados" ,
-             it: "4 Ferrados" ,
-            },
+            es: "4 Ferrados",
+            en: "4 Ferrados",
+            fr: "4 Ferrados",
+            de: "4 Ferrados",
+            it: "4 Ferrados",
+        },
         descripciones: {
             es: "Mezcla tradicional, buena estructura",
             en: "Traditional blend, good structure",
             fr: "Assemblage traditionnel, bonne structure",
             de: "Traditioneller Verschnitt, gute Struktur",
-            it: "Miscela tradizionale, buona struttura"
-    },   
+            it: "Miscela tradizionale, buona struttura",
+        },
     },
+    // FIX: añadido campo "nombres" que faltaba, y eliminado "descripciones" duplicado
     cregoMonaguilloBlanco: {
         precio34: "17.80",
         denominacion: "GODELLO - MONTERREY",
         alergenos: [],
-        descripciones: {
+        nombres: {
             es: "Crego e Monaguillo",
             en: "Crego e Monaguillo",
-            fr: "Crego e Monaguillo ",
+            fr: "Crego e Monaguillo",
             de: "Crego e Monaguillo",
-            it: "Crego e Monaguillo"
+            it: "Crego e Monaguillo",
         },
         descripciones: {
             es: "Godello joven, fruta blanca vibrante",
             en: "Young Godello, vibrant white fruit",
             fr: "Godello jeune, fruit blanc vibrant",
             de: "Junger Godello, lebendige weiße Frucht",
-            it: "Godello giovane, frutta bianca vibrante"
-    },   
-
+            it: "Godello giovane, frutta bianca vibrante",
+        },
     },
     castroLobarzanBlanco: {
         precio34: "20.00",
         denominacion: "GODELLO - MONTERREY",
         alergenos: [],
         nombres: {
-             es: "Castro de Lobarzán",
-             en: "Castro de Lobarzán" ,
-             fr: "Castro de Lobarzán" ,
-             de: "Castro de Lobarzán" ,
-             it: "Castro de Lobarzán" ,
-            },
+            es: "Castro de Lobarzán",
+            en: "Castro de Lobarzán",
+            fr: "Castro de Lobarzán",
+            de: "Castro de Lobarzán",
+            it: "Castro de Lobarzán",
+        },
         descripciones: {
             es: "Godello con cuerpo, paso por roble",
             en: "Full-bodied Godello, oak-aged",
             fr: "Godello corsé, vieilli en chêne",
             de: "Vollmundiger Godello, im Eichenfass gereift",
-            it: "Godello corposo, affinato in rovere"
-    },   
+            it: "Godello corposo, affinato in rovere",
+        },
     },
     rebolledoBlanco: {
         precio34: "18.50",
         denominacion: "GODELLO - VALDEORRAS",
         alergenos: [],
         nombres: {
-             es: "Joaquín Rebolledo",
-             en: "Joaquín Rebolledo" ,
-             fr: "Joaquín Rebolledo" ,
-             de: "Joaquín Rebolledo" ,
-             it: "Joaquín Rebolledo" ,
-            },
+            es: "Joaquín Rebolledo",
+            en: "Joaquín Rebolledo",
+            fr: "Joaquín Rebolledo",
+            de: "Joaquín Rebolledo",
+            it: "Joaquín Rebolledo",
+        },
         descripciones: {
             es: "Godello mineral, acidez brillante",
             en: "Mineral Godello, bright acidity",
             fr: "Godello minéral, acidité brillante",
             de: "Mineralischer Godello, brillante Säure",
-            it: "Godello minerale, acidità brillante"
-    },   
+            it: "Godello minerale, acidità brillante",
+        },
     },
     guitian: {
         precio34: "24.00",
         denominacion: "GODELLO - VALDEORRAS",
         alergenos: [],
         nombres: {
-             es: "Guitián",
-             en: "Guitián" ,
-             fr: "Guitián" ,
-             de: "Guitián" ,
-             it: "Guitián" ,
-            },
+            es: "Guitián",
+            en: "Guitián",
+            fr: "Guitián",
+            de: "Guitián",
+            it: "Guitián",
+        },
         descripciones: {
-           es: "Godello concentrado, gran elegancia",
+            es: "Godello concentrado, gran elegancia",
             en: "Concentrated Godello, great elegance",
             fr: "Godello concentré, grande élégance",
             de: "Konzentrierter Godello, große Eleganz",
-            it: "Godello concentrato, grande eleganza"
-    },   
+            it: "Godello concentrato, grande eleganza",
+        },
     },
-     quintadapeza: {
-        precio34: "17.50",
-        denominacion: "GODELLO - VALDEORRAS",
-        alergenos: [],
-        nombres: {
-             es: "Quinta da Peza",
-             en: "Quinta da Peza" ,
-             fr: "Quinta da Peza" ,
-             de: "Quinta da Peza" ,
-             it: "Quinta da Peza" ,
-            },
-        descripciones: {
-           es: "En boca es ligero, suave y sabroso.",
-            en: "On the palate, it is light, smooth, and flavorful.",
-            fr: "En bouche, il est léger, souple et savoureux.",
-            de: "Im Mund ist er leicht, geschmeidig und schmackhaft.",
-            it: "In bocca è leggero, morbido e saporito."
-    },   
-    },
-    
     godeval: {
         precio34: "19.80",
         denominacion: "GODELLO - VALDEORRAS",
         alergenos: [],
         nombres: {
-             es: "Godeval",
-             en: "Godeval" ,
-             fr: "Godeval" ,
-             de: "Godeval" ,
-             it: "Godeval" ,
-            },
+            es: "Godeval",
+            en: "Godeval",
+            fr: "Godeval",
+            de: "Godeval",
+            it: "Godeval",
+        },
         descripciones: {
             es: "Godello clásico, fresco y aromático",
             en: "Classic Godello, fresh and aromatic",
             fr: "Godello classique, frais et aromatique",
             de: "Klassischer Godello, frisch und aromatisch",
-            it: "Godello classico, fresco e aromatico"
-    },   
+            it: "Godello classico, fresco e aromatico",
+        },
     },
     godevalCepasVellas: {
-        precio34: "27.00",
+        precio34: "26.00",
         denominacion: "GODELLO - VALDEORRAS",
         alergenos: [],
         nombres: {
-             es: "Godeval Cepas Vellas",
-             en: "Godeval Cepas Vellas" ,
-             fr: "Godeval Cepas Vellas" ,
-             de: "Godeval Cepas Vellas" ,
-             it: "Godeval Cepas Vellas" ,
-            },
+            es: "Godeval Cepas Vellas",
+            en: "Godeval Cepas Vellas",
+            fr: "Godeval Cepas Vellas",
+            de: "Godeval Cepas Vellas",
+            it: "Godeval Cepas Vellas",
+        },
         descripciones: {
             es: "Godello de viñas viejas, complejo",
             en: "Old vines Godello, complex",
             fr: "Godello de vieilles vignes, complexe",
             de: "Godello aus alten Reben, komplex",
-            it: "Godello da vecchie vigne, complesso"
-    },   
+            it: "Godello da vecchie vigne, complesso",
+        },
     },
     vinasDelVero: {
         precio34: "21.50",
         denominacion: "SOMONTANO",
         alergenos: [],
         nombres: {
-             es: "Viñas del Vero Gewürztraminer",
-             en: "Viñas del Vero Gewürztraminer" ,
-             fr: "Viñas del Vero Gewürztraminer" ,
-             de: "Viñas del Vero Gewürztraminer" ,
-             it: "Viñas del Vero Gewürztraminer" ,
-            },
+            es: "Viñas del Vero Gewürztraminer",
+            en: "Viñas del Vero Gewürztraminer",
+            fr: "Viñas del Vero Gewürztraminer",
+            de: "Viñas del Vero Gewürztraminer",
+            it: "Viñas del Vero Gewürztraminer",
+        },
         descripciones: {
             es: "Blanco aromático, ligeramente semidulce",
             en: "Aromatic white, slightly off-dry",
             fr: "Blanc aromatique, légèrement moelleux",
             de: "Aromatischer Weißwein, leicht lieblich",
-            it: "Bianco aromatico, leggermente abboccato"
-        
-    },
+            it: "Bianco aromatico, leggermente abboccato",
+        },
     },
     // === VINOS ROSADOS ===
     pizarrasOtero: {
@@ -1716,7 +1611,7 @@ export const platos = {
             en: "Mencía rosé, fresh and fruity",
             fr: "Rosé de Mencía, frais et fruité",
             de: "Mencía-Rosé, frisch und fruchtig",
-            it: "Rosato di Mencía, fresco e fruttato"
+            it: "Rosato di Mencía, fresco e fruttato",
         },
     },
     lambruscoGalieri: {
@@ -1735,7 +1630,7 @@ export const platos = {
             en: "Rosé Lambrusco, light natural sparkling wine.",
             fr: "Lambrusco rosé, vin effervescent naturel léger.",
             de: "Lambrusco Rosé, leichter natürlicher Schaumwein.",
-            it: "Lambrusco rosato, leggero spumante naturale."
+            it: "Lambrusco rosato, leggero spumante naturale.",
         },
     },
 
@@ -1755,7 +1650,7 @@ export const platos = {
             en: "Intensely sweet, raisins and spices.",
             fr: "Doux intense, raisins secs et épices.",
             de: "Intensiv süß, Rosinen und Gewürze.",
-            it: "Dolce intenso, uva passa e spezie."
+            it: "Dolce intenso, uva passa e spezie.",
         },
     },
     oportoSandeman: {
@@ -1773,7 +1668,7 @@ export const platos = {
             en: "Red Port, sweet and spicy.",
             fr: "Porto rouge, doux et épicé.",
             de: "Roter Portwein, süß und würzig.",
-            it: "Porto rosso, dolce e speziato."
+            it: "Porto rosso, dolce e speziato.",
         },
     },
     moscatelNaranja: {
@@ -1791,13 +1686,13 @@ export const platos = {
             en: "Sweet Muscat, natural orange aroma.",
             fr: "Muscat doux, arôme naturel d'orange.",
             de: "Süßer Muskateller, natürliches Orangenaroma.",
-            it: "Moscato dolce, aroma naturale di arancia."
+            it: "Moscato dolce, aroma naturale di arancia.",
         },
     },
 
-// === BURBUJAS: CAVAS Y CHAMPAGNE ===
+    // === BURBUJAS: CAVAS Y CHAMPAGNE ===
     marDeFradesEspumoso: {
-        precio34: "28.00",
+        precio34: "26.00",
         denominacion: "ESPUMOSO",
         alergenos: [],
         nombres: {
@@ -1812,7 +1707,7 @@ export const platos = {
             en: "Sparkling Albariño, elegant and surprising.",
             fr: "Albariño pétillant, élégant et surprenant.",
             de: "Albariño-Schaumwein, elegant und überraschend.",
-            it: "Spumante di Albariño, elegante e sorprendente."
+            it: "Spumante di Albariño, elegante e sorprendente.",
         },
     },
     annaCodorniu: {
@@ -1831,7 +1726,7 @@ export const platos = {
             en: "Brut Cava, fine and balanced bubbles.",
             fr: "Cava brut, bulles fines et équilibrées.",
             de: "Cava Brut, feine und ausgewogene Perlage.",
-            it: "Cava brut, perlage fine ed equilibrato."
+            it: "Cava brut, perlage fine ed equilibrato.",
         },
     },
     sumarrocaReserva: {
@@ -1850,7 +1745,7 @@ export const platos = {
             en: "Reserva Cava, complex with aging notes.",
             fr: "Cava reserva, complexe avec des notes d'élevage.",
             de: "Cava Reserva, komplex mit Reifenoten.",
-            it: "Cava reserva, complesso con note di invecchiamento."
+            it: "Cava reserva, complesso con note di invecchiamento.",
         },
     },
     sumarrocaRose: {
@@ -1869,12 +1764,12 @@ export const platos = {
             en: "Rosé Cava, aromas of fresh red fruits",
             fr: "Cava rosé, arômes de fruits rouges frais",
             de: "Rosé-Cava, Aromen von frischen roten Früchten",
-            it: "Cava rosato, aromi di frutti rossi freschi"
+            it: "Cava rosato, aromi di frutti rossi freschi",
         },
     },
     veuveClicquot: {
         precio34: "58.00",
-        denominacion: "BRUT",
+        denominacion: "CHAMPAGNE BRUT",
         alergenos: [],
         nombres: {
             es: "Veuve Clicquot",
@@ -1888,11 +1783,11 @@ export const platos = {
             en: "Classic Champagne, great structure and freshness.",
             fr: "Champagne classique, grande structure et fraîcheur.",
             de: "Klassischer Champagner, großartige Struktur und Frische.",
-            it: "Champagne classico, grande struttura e freschezza."
+            it: "Champagne classico, grande struttura e freschezza.",
         },
     },
     bollinger: {
-        precio34: "68.00",
+        precio34: "68.50",
         denominacion: "CHAMPAGNE",
         alergenos: [],
         nombres: {
@@ -1907,11 +1802,11 @@ export const platos = {
             en: "Robust Champagne, notes of dried fruits and toast.",
             fr: "Champagne robuste, notes de fruits secs et de pain grillé.",
             de: "Robuster Champagner, Noten von getrockneten Früchten und Röstbrot.",
-            it: "Champagne robusto, note di frutta secca e tostato."
+            it: "Champagne robusto, note di frutta secca e tostato.",
         },
     },
     moetChandon: {
-        precio34: "55.00",
+        precio34: "54.00",
         denominacion: "CHAMPAGNE",
         alergenos: [],
         nombres: {
@@ -1926,59 +1821,260 @@ export const platos = {
             en: "Fruity Champagne, elegant and very balanced.",
             fr: "Champagne fruité, élégant et très équilibré.",
             de: "Fruchtiger Champagner, elegant und sehr ausgewogen.",
-            it: "Champagne fruttato, elegante e molto equilibrato."
+            it: "Champagne fruttato, elegante e molto equilibrato.",
         },
     },
 
-// === COCTELERÍA: GINEBRAS ===
-    beefeater: { precioCopa: "6.50", precioCombinado: "7.50", nombres: { es: "Beefeater" } },
-    beefeater24: { precioCopa: "9.50", precioCombinado: "10.50", nombres: { es: "Beefeater 24" } },
-    bombay: { precioCopa: "7.00", precioCombinado: "8.00", nombres: { es: "Bombay" } },
-    bombaySapphire: { precioCopa: "8.50", precioCombinado: "9.50", nombres: { es: "Bombay Sapphire" } },
-    bulldog: { precioCopa: "10.00", precioCombinado: "11.00", nombres: { es: "Bulldog" } },
-    citadelle: { precioCopa: "10.00", precioCombinado: "11.00", nombres: { es: "Citadelle" } },
-    gVine: { precioCopa: "11.00", precioCombinado: "12.00", nombres: { es: "G-Vine" } },
-    gordons: { precioCopa: "4.80", precioCombinado: "5.80", nombres: { es: "Gordon's" } },
-    hendricks: { precioCopa: "10.00", precioCombinado: "11.00", nombres: { es: "Hendrick's" } },
-    june: { precioCopa: "9.00", precioCombinado: "10.00", nombres: { es: "June" } },
-    larios: { precioCopa: "4.80", precioCombinado: "5.80", nombres: { es: "Larios" } },
-    larios12: { precioCopa: "7.50", precioCombinado: "8.50", nombres: { es: "Larios 12" } },
-    martinMillers: { precioCopa: "10.00", precioCombinado: "11.00", nombres: { es: "Martin Miller's" } },
-    seagrams: { precioCopa: "7.50", precioCombinado: "8.50", nombres: { es: "Seagram's" } },
-    tanqueray: { precioCopa: "7.00", precioCombinado: "8.00", nombres: { es: "Tanqueray" } },
-    puertoIndias: { precioCopa: "7.50", precioCombinado: "8.50", nombres: { es: "Puerto de Indias" } },
-    nordes: { precioCopa: "9.00", precioCombinado: "10.00", nombres: { es: "Nordés" } },
-    ginmare: { precioCopa: "10.00", precioCombinado: "11.00", nombres: { es: "Gin Mare" } },
-    formentera: { precioCopa: "10.00", precioCombinado: "11.00", nombres: { es: "Formentera" } },
-    
+    // === COCTELERÍA: GINEBRAS ===
+    // FIX: añadidos nombres en todos los idiomas a toda la coctelería
+    beefeater: {
+        precioCopa: "6.50",
+        precioCombinado: "7.50",
+        alergenos: [],
+        nombres: { es: "Beefeater", en: "Beefeater", fr: "Beefeater", de: "Beefeater", it: "Beefeater" },
+    },
+    beefeater24: {
+        precioCopa: "9.50",
+        precioCombinado: "10.50",
+        alergenos: [],
+        nombres: { es: "Beefeater 24", en: "Beefeater 24", fr: "Beefeater 24", de: "Beefeater 24", it: "Beefeater 24" },
+    },
+    bombay: {
+        precioCopa: "7.00",
+        precioCombinado: "8.00",
+        alergenos: [],
+        nombres: { es: "Bombay", en: "Bombay", fr: "Bombay", de: "Bombay", it: "Bombay" },
+    },
+    bombaySapphire: {
+        precioCopa: "8.50",
+        precioCombinado: "9.50",
+        alergenos: [],
+        nombres: { es: "Bombay Sapphire", en: "Bombay Sapphire", fr: "Bombay Sapphire", de: "Bombay Sapphire", it: "Bombay Sapphire" },
+    },
+    bulldog: {
+        precioCopa: "10.00",
+        precioCombinado: "11.00",
+        alergenos: [],
+        nombres: { es: "Bulldog", en: "Bulldog", fr: "Bulldog", de: "Bulldog", it: "Bulldog" },
+    },
+    citadelle: {
+        precioCopa: "10.00",
+        precioCombinado: "11.00",
+        alergenos: [],
+        nombres: { es: "Citadelle", en: "Citadelle", fr: "Citadelle", de: "Citadelle", it: "Citadelle" },
+    },
+    gVine: {
+        precioCopa: "11.00",
+        precioCombinado: "12.00",
+        alergenos: [],
+        nombres: { es: "G-Vine", en: "G-Vine", fr: "G-Vine", de: "G-Vine", it: "G-Vine" },
+    },
+    gordons: {
+        precioCopa: "4.80",
+        precioCombinado: "5.80",
+        alergenos: [],
+        nombres: { es: "Gordon's", en: "Gordon's", fr: "Gordon's", de: "Gordon's", it: "Gordon's" },
+    },
+    hendricks: {
+        precioCopa: "10.00",
+        precioCombinado: "11.00",
+        alergenos: [],
+        nombres: { es: "Hendrick's", en: "Hendrick's", fr: "Hendrick's", de: "Hendrick's", it: "Hendrick's" },
+    },
+    june: {
+        precioCopa: "9.00",
+        precioCombinado: "10.00",
+        alergenos: [],
+        nombres: { es: "June", en: "June", fr: "June", de: "June", it: "June" },
+    },
+    larios: {
+        precioCopa: "4.80",
+        precioCombinado: "5.80",
+        alergenos: [],
+        nombres: { es: "Larios", en: "Larios", fr: "Larios", de: "Larios", it: "Larios" },
+    },
+    larios12: {
+        precioCopa: "7.50",
+        precioCombinado: "8.50",
+        alergenos: [],
+        nombres: { es: "Larios 12", en: "Larios 12", fr: "Larios 12", de: "Larios 12", it: "Larios 12" },
+    },
+    martinMillers: {
+        precioCopa: "10.00",
+        precioCombinado: "11.00",
+        alergenos: [],
+        nombres: { es: "Martin Miller's", en: "Martin Miller's", fr: "Martin Miller's", de: "Martin Miller's", it: "Martin Miller's" },
+    },
+    seagrams: {
+        precioCopa: "7.50",
+        precioCombinado: "8.50",
+        alergenos: [],
+        nombres: { es: "Seagram's", en: "Seagram's", fr: "Seagram's", de: "Seagram's", it: "Seagram's" },
+    },
+    tanqueray: {
+        precioCopa: "7.00",
+        precioCombinado: "8.00",
+        alergenos: [],
+        nombres: { es: "Tanqueray", en: "Tanqueray", fr: "Tanqueray", de: "Tanqueray", it: "Tanqueray" },
+    },
+    puertoIndias: {
+        precioCopa: "7.50",
+        precioCombinado: "8.50",
+        alergenos: [],
+        nombres: { es: "Puerto de Indias", en: "Puerto de Indias", fr: "Puerto de Indias", de: "Puerto de Indias", it: "Puerto de Indias" },
+    },
+    nordes: {
+        precioCopa: "9.00",
+        precioCombinado: "10.00",
+        alergenos: [],
+        nombres: { es: "Nordés", en: "Nordés", fr: "Nordés", de: "Nordés", it: "Nordés" },
+    },
+    ginmare: {
+        precioCopa: "10.00",
+        precioCombinado: "11.00",
+        alergenos: [],
+        nombres: { es: "Gin Mare", en: "Gin Mare", fr: "Gin Mare", de: "Gin Mare", it: "Gin Mare" },
+    },
+    formentera: {
+        precioCopa: "10.00",
+        precioCombinado: "11.00",
+        alergenos: [],
+        nombres: { es: "Formentera", en: "Formentera", fr: "Formentera", de: "Formentera", it: "Formentera" },
+    },
+
     // === COCTELERÍA: WHISKY ===
-    whisky100Pipers: { precioShot: "4.00", precioCopa: "6.00", precioCombinado: "7.00", nombres: { es: "100 Pipers" } },
-    ballantines: { precioShot: "4.00", precioCopa: "5.50", precioCombinado: "6.50", nombres: { es: "Ballantine's" } },
-    cardhu: { precioShot: "5.00", precioCopa: "7.50", precioCombinado: "8.50", nombres: { es: "Cardhu" } },
-    chivasRegal: { precioShot: "5.00", precioCopa: "7.50", precioCombinado: "8.50", nombres: { es: "Chivas Regal" } },
+    whisky100Pipers: {
+        precioShot: "4.00",
+        precioCopa: "6.00",
+        precioCombinado: "7.00",
+        alergenos: [],
+        nombres: { es: "100 Pipers", en: "100 Pipers", fr: "100 Pipers", de: "100 Pipers", it: "100 Pipers" },
+    },
+    ballantines: {
+        precioShot: "4.00",
+        precioCopa: "5.50",
+        precioCombinado: "6.50",
+        alergenos: [],
+        nombres: { es: "Ballantine's", en: "Ballantine's", fr: "Ballantine's", de: "Ballantine's", it: "Ballantine's" },
+    },
+    cardhu: {
+        precioShot: "5.00",
+        precioCopa: "7.50",
+        precioCombinado: "8.50",
+        alergenos: [],
+        nombres: { es: "Cardhu", en: "Cardhu", fr: "Cardhu", de: "Cardhu", it: "Cardhu" },
+    },
+    chivasRegal: {
+        precioShot: "5.00",
+        precioCopa: "7.50",
+        precioCombinado: "8.50",
+        alergenos: [],
+        nombres: { es: "Chivas Regal", en: "Chivas Regal", fr: "Chivas Regal", de: "Chivas Regal", it: "Chivas Regal" },
+    },
 
     // === COCTELERÍA: BRANDY ===
-    brandy1866: { precioCopa: "10.00", precioCombinado: "11.00", nombres: { es: "Brandy 1866" } },
-    cardenalMendoza: { precioCopa: "6.00", precioCombinado: "7.00", nombres: { es: "Cardenal Mendoza" } },
-    carlosI: { precioCopa: "6.00", precioCombinado: "7.00", nombres: { es: "Carlos I" } },
-    duqueAlba: { precioCopa: "6.00", precioCombinado: "6.50", nombres: { es: "Duque de Alba" } },
-    luisFelipe: { precioCopa: "15.00", precioCombinado: "16.00", nombres: { es: "Luis Felipe" } },
-    magno: { precioCopa: "3.00", precioCombinado: "4.00", nombres: { es: "Magno" } },
-    torres5: { precioCopa: "3.30", precioCombinado: "4.30", nombres: { es: "Torres 5" } },
-    torres10: { precioCopa: "3.80", precioCombinado: "4.80", nombres: { es: "Torres 10" } },
-    torres20: { precioCopa: "8.00", precioCombinado: "9.00", nombres: { es: "Torres 20" } },
-    veterano: { precioCopa: "2.00", precioCombinado: "3.00", nombres: { es: "Veterano" } },
+    brandy1866: {
+        precioCopa: "10.00",
+        precioCombinado: "11.00",
+        alergenos: [],
+        nombres: { es: "Brandy 1866", en: "Brandy 1866", fr: "Brandy 1866", de: "Brandy 1866", it: "Brandy 1866" },
+    },
+    cardenalMendoza: {
+        precioCopa: "6.00",
+        precioCombinado: "7.00",
+        alergenos: [],
+        nombres: { es: "Cardenal Mendoza", en: "Cardenal Mendoza", fr: "Cardenal Mendoza", de: "Cardenal Mendoza", it: "Cardenal Mendoza" },
+    },
+    carlosI: {
+        precioCopa: "6.00",
+        precioCombinado: "7.00",
+        alergenos: [],
+        nombres: { es: "Carlos I", en: "Carlos I", fr: "Carlos I", de: "Carlos I", it: "Carlos I" },
+    },
+    duqueAlba: {
+        precioCopa: "6.00",
+        precioCombinado: "6.50",
+        alergenos: [],
+        nombres: { es: "Duque de Alba", en: "Duque de Alba", fr: "Duque de Alba", de: "Duque de Alba", it: "Duque de Alba" },
+    },
+    luisFelipe: {
+        precioCopa: "15.00",
+        precioCombinado: "16.00",
+        alergenos: [],
+        nombres: { es: "Luis Felipe", en: "Luis Felipe", fr: "Luis Felipe", de: "Luis Felipe", it: "Luis Felipe" },
+    },
+    magno: {
+        precioCopa: "3.00",
+        precioCombinado: "4.00",
+        alergenos: [],
+        nombres: { es: "Magno", en: "Magno", fr: "Magno", de: "Magno", it: "Magno" },
+    },
+    torres5: {
+        precioCopa: "3.30",
+        precioCombinado: "4.30",
+        alergenos: [],
+        nombres: { es: "Torres 5", en: "Torres 5", fr: "Torres 5", de: "Torres 5", it: "Torres 5" },
+    },
+    torres10: {
+        precioCopa: "3.80",
+        precioCombinado: "4.80",
+        alergenos: [],
+        nombres: { es: "Torres 10", en: "Torres 10", fr: "Torres 10", de: "Torres 10", it: "Torres 10" },
+    },
+    torres20: {
+        precioCopa: "8.00",
+        precioCombinado: "9.00",
+        alergenos: [],
+        nombres: { es: "Torres 20", en: "Torres 20", fr: "Torres 20", de: "Torres 20", it: "Torres 20" },
+    },
+    veterano: {
+        precioCopa: "2.00",
+        precioCombinado: "3.00",
+        alergenos: [],
+        nombres: { es: "Veterano", en: "Veterano", fr: "Veterano", de: "Veterano", it: "Veterano" },
+    },
 
     // === COCTELERÍA: VERMUT ===
-    martiniBlanco: { precioCopa: "3.20", nombres: { es: "Martini Blanco" } },
-    martiniRojo: { precioCopa: "3.20", nombres: { es: "Martini Rojo" } },
-    petrony: { precioCopa: "4.00", nombres: { es: "Petroni" } },
-    yzaguirre: { precioCopa: "3.20", nombres: { es: "Yzaguirre" } },
-    chizpaso: { precioCopa: "4.50", nombres: { es: "Chizpaso" } },
-    vermutMezclado: { precioCopa: "3.20", nombres: { es: "Vermut Mezclado" } },
+    martiniBlanco: {
+        precioCopa: "3.20",
+        alergenos: [],
+        nombres: { es: "Martini Blanco", en: "Martini Bianco", fr: "Martini Blanc", de: "Martini Bianco", it: "Martini Bianco" },
+    },
+    martiniRojo: {
+        precioCopa: "3.20",
+        alergenos: [],
+        nombres: { es: "Martini Rojo", en: "Martini Rosso", fr: "Martini Rouge", de: "Martini Rosso", it: "Martini Rosso" },
+    },
+    petrony: {
+        precioCopa: "4.00",
+        alergenos: [],
+        nombres: { es: "Petroni", en: "Petroni", fr: "Petroni", de: "Petroni", it: "Petroni" },
+    },
+    yzaguirre: {
+        precioCopa: "3.20",
+        alergenos: [],
+        nombres: { es: "Yzaguirre", en: "Yzaguirre", fr: "Yzaguirre", de: "Yzaguirre", it: "Yzaguirre" },
+    },
+    chizpaso: {
+        precioCopa: "4.50",
+        alergenos: [],
+        nombres: { es: "Chizpaso", en: "Chizpaso", fr: "Chizpaso", de: "Chizpaso", it: "Chizpaso" },
+    },
+    vermutMezclado: {
+        precioCopa: "3.20",
+        alergenos: [],
+        nombres: { es: "Vermut Mezclado", en: "Mixed Vermouth", fr: "Vermouth Mélangé", de: "Gemischter Wermut", it: "Vermouth Misto" },
+    },
 
     // === COCTELERÍA: VODKA ===
-    absolut: { precioCopa: "6.50", nombres: { es: "Absolut" } },
-    stolichnaya: { precioCopa: "7.00", nombres: { es: "Stolichnaya" } },
-
+    absolut: {
+        precioCopa: "6.50",
+        alergenos: [],
+        nombres: { es: "Absolut", en: "Absolut", fr: "Absolut", de: "Absolut", it: "Absolut" },
+    },
+    stolichnaya: {
+        precioCopa: "7.00",
+        alergenos: [],
+        nombres: { es: "Stolichnaya", en: "Stolichnaya", fr: "Stolichnaya", de: "Stolichnaya", it: "Stolichnaya" },
+    },
 };
