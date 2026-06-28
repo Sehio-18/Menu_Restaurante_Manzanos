@@ -55,15 +55,17 @@ const lang = url.includes('/en/') ? 'en' : url.includes('/de/') ? 'de' : url.inc
         .nav-superior {
             display: flex;
             align-items: center;
-            padding: 1rem 1.5rem; /* Reducido un poco para ganar espacio arriba */
-            max-width: 1200px;
+            padding: 1rem 1.5rem;
+            max-width: 800px;
             margin: 0 auto;
         }
         
-        .main-container { 
-            max-width: 600px; /* Estrechado para que en móviles anchos no se vea raro */
-            margin: 0 auto; 
-            padding: 0.5rem 1rem 120px; /* Reducido márgenes laterales */
+        .main-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0.5rem 1.5rem 120px;
+            box-sizing: border-box;
         }
         
         /* AJUSTES PARA EL MODAL (IMÁGENES AMPLIADAS) */
