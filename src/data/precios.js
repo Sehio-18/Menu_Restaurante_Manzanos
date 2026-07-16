@@ -2,7 +2,7 @@
 export const platos = {
     //ENTRANTES
     vieiras: {
-        precio: "17.90",
+        precio: "18.80",
         foto: "vieiras.jpg",
         alergenos: ["moluscos", "gluten"],
         nombres:{
@@ -22,7 +22,7 @@ export const platos = {
     },
 
     pastel: {
-        precio: "12.80",
+        precio: "13.30",
         foto: "pastel.jpg",
         alergenos: ["lacteos", "huevos", "crustaceos"],
         nombres:{
@@ -41,7 +41,7 @@ export const platos = {
         },
     },
     cecina: {
-        precio: "15.50",
+        precio: "17.80",
         foto: "cecina.jpg",
         alergenos: ["lacteos"],
         nombres:{
@@ -60,7 +60,7 @@ export const platos = {
         },
     },
     langostinos: {
-        precio: "14.80",
+        precio: "17.80",
         foto: "langostinos.jpg",
         alergenos: ["crustaceos", "gluten"],
         nombres:{
@@ -80,7 +80,7 @@ export const platos = {
     },
 
     empanada: {
-        precio: "10.80",
+        precio: "11.50",
         foto: "empanada.jpg",
         alergenos: ["lacteos", "moluscos", "huevos", "gluten"],
         nombres:{
@@ -100,7 +100,7 @@ export const platos = {
     },
 
     foie: {
-        precio: "14.50",
+        precio: "15.80",
         foto: "foie.jpg",
         alergenos: ["gluten", "sulfitos"],
         nombres:{
@@ -120,7 +120,7 @@ export const platos = {
     },
 
     navajas: {
-        precio: "14.50",
+        precio: "16.80",
         foto: "navajas.jpg",
         alergenos: ["moluscos"],
         nombres:{
@@ -140,7 +140,7 @@ export const platos = {
     },
 
     croquetas: {
-        precio: "11.30",
+        precio: "12.80",
         foto: "croquetas.jpg",
         alergenos: ["gluten", "huevos", "lacteos"],
         nombres:{
@@ -161,7 +161,7 @@ export const platos = {
 
     // === MARISCOS ===
     arrozNegro: {
-        precio: "24.50",
+        precio: "26.80",
         foto: "arroz_negro.jpg",
         alergenos: ["pescado", "crustaceos", "moluscos"],
         nombres:{
@@ -181,7 +181,7 @@ export const platos = {
     },
 
     arrozBogavante: {
-        precio: "29.80",
+        precio: "32.80",
         foto: "arroz_bogavante.jpg",
         alergenos: ["pescado", "crustaceos", "moluscos"],
         nombres:{
@@ -201,7 +201,7 @@ export const platos = {
     },
 
     arrozMarineiro: {
-        precio: "21.00",
+        precio: "23.00",
         foto: "arroz_marineiro.jpg",
         alergenos: ["pescado", "crustaceos", "moluscos"],
         nombres:{
@@ -221,7 +221,7 @@ export const platos = {
     },
 
     fidegua: {
-        precio: "21.00",
+        precio: "23.00",
         foto: "fidegua.jpg",
         alergenos: ["pescado", "crustaceos", "moluscos", "gluten"],
         nombres:{
@@ -242,7 +242,7 @@ export const platos = {
 
     // === CARNES ===
     cochinillo: {
-        precio: "22.50",
+        precio: "24.50",
         foto: "cochinillo.jpg",
         alergenos: [],
         nombres:{
@@ -262,7 +262,7 @@ export const platos = {
     },
 
     solomillo: {
-        precio: "21.80",
+        precio: "23.80",
         foto: "solomillo.jpg",
         alergenos: [],
         nombres:{
@@ -282,7 +282,7 @@ export const platos = {
     },
 
     solomilloRoquefort: {
-        precio: "22.50",
+        precio: "24.50",
         foto: "solomillo_roquefort.jpg",
         alergenos: ["lacteos"],
         nombres:{
@@ -302,7 +302,7 @@ export const platos = {
     },
 
     entrecot: {
-        precio: "19.80",
+        precio: "22.80",
         foto: "entrecot.jpg",
         alergenos: ["lacteos", "gluten"],
         nombres:{
@@ -322,7 +322,7 @@ export const platos = {
     },
     // === PESCADOS ===
     rapeSugerencia: {
-        precio: "22.50",
+        precio: "23.50",
         foto: "rape.jpg",
         alergenos: ["pescado", "crustaceos", "moluscos"],
         nombres:{
@@ -342,7 +342,7 @@ export const platos = {
     },
 
     lubinaSugerencia: {
-        precio: "22.00",
+        precio: "23.50",
         foto: "lubina.jpg",
         alergenos: ["pescado"],
         nombres:{
@@ -362,7 +362,7 @@ export const platos = {
     },
 
     bacalaoManzanos: {
-        precio: "21.80",
+        precio: "23.80",
         foto: "bacalao_manzanos.jpg",
         alergenos: ["pescado"],
         nombres:{
@@ -382,7 +382,7 @@ export const platos = {
     },
 
     bacalaoDourado: {
-        precio: "14.50",
+        precio: "15.50",
         foto: "bacalao_dourado.jpg",
         alergenos: ["pescado", "huevos"],
         nombres:{
@@ -403,7 +403,7 @@ export const platos = {
 
     // === PIZZAS ===
     pizzaMargarita: {
-        precio: "11.90",
+        precio: "13.90",
         alergenos: ["gluten", "lacteos"],
         nombres:{
             es: "Pizza Margarita",
@@ -421,7 +421,7 @@ export const platos = {
         },
     },
     pizzaMixta: {
-        precio: "12.90",
+        precio: "14.90",
         alergenos: ["gluten", "lacteos"],
         nombres:{
             es: "Pizza Mixta",
@@ -439,7 +439,7 @@ export const platos = {
         },
     },
     pizzaCaprichosa: {
-        precio: "13.00",
+        precio: "15.80",
         alergenos: ["gluten", "lacteos"],
         nombres:{
             es: "Pizza Caprichosa",
@@ -457,7 +457,7 @@ export const platos = {
         },
     },
     pizzaCantabrica: {
-        precio: "14.50",
+        precio: "16.50",
         alergenos: ["gluten", "lacteos", "pescado"],
         nombres:{
             es: "Pizza Cantabrica",
@@ -475,7 +475,7 @@ export const platos = {
         },
     },
     pizzaSiciliana: {
-        precio: "13.50",
+        precio: "15.80",
         alergenos: ["gluten", "lacteos"],
         nombres:{
             es: "Pizza Siciliana",
@@ -493,7 +493,7 @@ export const platos = {
         },
     },
     pizzaCuatroQuesos: {
-        precio: "13.80",
+        precio: "15.80",
         alergenos: ["gluten", "lacteos"],
         nombres:{
             es: "Pizza 4 Quesos",
@@ -511,7 +511,7 @@ export const platos = {
         },
     },
     pizzaDelPais: {
-        precio: "13.80",
+        precio: "15.80",
         alergenos: ["gluten", "lacteos"],
         nombres:{
             es: "Pizza del País",
@@ -529,7 +529,7 @@ export const platos = {
         },
     },
     pizzaAtlantica: {
-        precio: "13.80",
+        precio: "15.80",
         alergenos: ["gluten", "lacteos", "pescado"],
         nombres:{
             es: "Pizza Atlantica",
@@ -547,7 +547,7 @@ export const platos = {
         },
     },
     pizzaCampista: {
-        precio: "14.50",
+        precio: "16.50",
         alergenos: ["gluten", "lacteos", "huevos"],
         nombres:{
             es: "Pizza Campista",
@@ -565,7 +565,7 @@ export const platos = {
         },
     },
     pizzaTresSabores: {
-        precio: "14.50",
+        precio: "16.50",
         alergenos: ["gluten", "lacteos"],
         nombres:{
             es: "Pizza 3 Sabores",
@@ -583,7 +583,7 @@ export const platos = {
         },
     },
     pizzaVegetariana: {
-        precio: "13.50",
+        precio: "15.50",
         alergenos: ["gluten", "lacteos"],
         nombres:{
             es: "Pizza Vegetariana",
