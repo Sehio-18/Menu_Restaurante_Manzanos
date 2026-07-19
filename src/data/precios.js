@@ -940,7 +940,6 @@ export const platos = {
     campillo: {
         precio34: "21.00",
         precio12: "14.00",
-        precioMagnum: "--",
         denominacion: "RIOJA",
         alergenos: [],
         nombres: {
