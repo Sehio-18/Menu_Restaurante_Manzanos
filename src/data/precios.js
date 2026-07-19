@@ -843,8 +843,7 @@ export const platos = {
 
     // === VINOS TINTOS ===
     rebolledo: {
-        precio34: "17.50",
-        precioMagnum: "32.00",
+        precio34: "18.50",
         denominacion: "VALDEORRAS",
         alergenos: [],
         nombres: {
@@ -1040,7 +1039,6 @@ export const platos = {
     },
     ramonBilbaoLimitada: {
         precio34: "23.00",
-        precioMagnum: "--",
         denominacion: "VENDIMIAS SELECCIONADAS",
         alergenos: [],
         nombres: {
@@ -1060,7 +1058,6 @@ export const platos = {
     },
      ramonBilbaoReserva: {
         precio34: "21.00",
-        precioMagnum: "--",
         denominacion: "GRANDES VINOS",
         alergenos: [],
         nombres: {
