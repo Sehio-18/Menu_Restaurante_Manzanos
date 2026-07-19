@@ -862,6 +862,25 @@ export const platos = {
             it: "Mencía di montagna, minerale ed elegante.",
         },
     },
+     pontedaboga: {
+        precio34: "20.00",
+        denominacion: "RIBEIRA SACRA",
+        alergenos: [],
+        nombres: {
+            es: "Ponte da Boga",
+            en: "Ponte da Boga",
+            fr: "Ponte da Boga",
+            de: "Ponte da Boga",
+            it: "Ponte da Boga",
+        },
+        descripciones: {
+            es: "Tinto elegante con intensos aromas a cereza picota y mora",
+            en: "An elegant red wine with intense aromas of picota cherry and blackberry",
+            fr: "Un vin rouge élégant aux arômes intenses de cerise picota et de mûre",
+            de: "Ein eleganter Rotwein mit intensiven Aromen von Picota-Kirschen und Brombeeren",
+            it: "Vino rosso elegante con intensi aromi di ciliegia picota e mora",
+        },
+    },
     abadiaCova: {
         precio34: "19.50",
         denominacion: "RIBEIRA SACRA",
@@ -882,7 +901,7 @@ export const platos = {
         },
     },
     cregoMonaguillo: {
-        precio34: "17.50",
+        precio34: "18.80",
         denominacion: "MONTERREY",
         alergenos: [],
         nombres: {
@@ -922,7 +941,7 @@ export const platos = {
     campillo: {
         precio34: "21.00",
         precio12: "14.00",
-        precioMagnum: "42.00",
+        precioMagnum: "--",
         denominacion: "RIOJA",
         alergenos: [],
         nombres: {
@@ -941,8 +960,9 @@ export const platos = {
         },
     },
     ramonBilbao: {
-        precio34: "19.50",
-        precio12: "9.80",
+        precio34: "19.80",
+        precio12: "9.90",
+        precioMagnum: "39.00",
         denominacion: "RIOJA",
         alergenos: [],
         nombres: {
@@ -958,6 +978,25 @@ export const platos = {
             fr: "Moderne et fruité, très polyvalent",
             de: "Modern und fruchtig, sehr vielseitig",
             it: "Moderno e fruttato, molto versatile",
+        },
+    },
+    luiscanas: {
+        precio34: "21.00",
+        denominacion: "RIOJA",
+        alergenos: [],
+        nombres: {
+            es: "Luis Cañas",
+            en: "Luis Cañas",
+            fr: "Luis Cañas",
+            de: "Luis Cañas",
+            it: "Luis Cañas",
+        },
+        descripciones: {
+            es: "Tinto muy equilibrado, con notas de fruta roja madura",
+            en: "A very well-balanced red wine, with notes of ripe red fruit ",
+            fr: "Un vin rouge très équilibré, aux notes de fruits rouges mûrs ",
+            de: "Ein sehr ausgewogener Rotwein mit Noten von reifen roten Beeren",
+            it: "Vino rosso molto equilibrato, con note di frutta rossa matura",
         },
     },
     baigorri: {
@@ -981,7 +1020,7 @@ export const platos = {
     },
     azpilicueta: {
         precio34: "17.50",
-        precioMagnum: "42.00",
+        precioMagnum: "35.00",
         denominacion: "RIOJA",
         alergenos: [],
         nombres: {
@@ -1000,8 +1039,8 @@ export const platos = {
         },
     },
     ramonBilbaoLimitada: {
-        precio34: "22.80",
-        precioMagnum: "42.00",
+        precio34: "23.00",
+        precioMagnum: "--",
         denominacion: "VENDIMIAS SELECCIONADAS",
         alergenos: [],
         nombres: {
@@ -1017,6 +1056,26 @@ export const platos = {
             fr: "Sélection des meilleurs terrains.",
             de: "Auswahl der besten Grundstücke.",
             it: "Selezione dei migliori appezzamenti.",
+        },
+    },
+     ramonBilbaoReserva: {
+        precio34: "21.00",
+        precioMagnum: "--",
+        denominacion: "GRANDES VINOS",
+        alergenos: [],
+        nombres: {
+            es: "Ramón Bilbao Reserva",
+            en: "Ramón Bilbao Reserva",
+            fr: "Ramón Bilbao Reserva",
+            de: "Ramón Bilbao Reserva",
+            it: "Ramón Bilbao Reserva",
+        },
+        descripciones: {
+            es: "Un Rioja clásico y estructurado, con perfecto equilibrio entre fruta compotada y tostados.",
+            en: "A classic, full-bodied Rioja, with a perfect balance between stewed fruit and toasty notes.",
+            fr: "Un Rioja classique et structuré, présentant un équilibre parfait entre les arômes de fruits compotés et les notes grillées.",
+            de: "Ein klassischer, strukturierter Rioja mit einer perfekten Balance zwischen Kompottnoten und Röstnoten.",
+            it: "Un Rioja classico e strutturato, con un perfetto equilibrio tra note di frutta cotta e sentori tostati.",
         },
     },
     lanD12: {
@@ -1077,7 +1136,7 @@ export const platos = {
         },
     },
     quintaTarsus: {
-        precio34: "22.00",
+        precio34: "22.50",
         denominacion: "RIBERA DEL DUERO",
         alergenos: [],
         nombres: {
@@ -1096,7 +1155,7 @@ export const platos = {
         },
     },
     manchonMieres: {
-        precio34: "29.00",
+        precio34: "33.00",
         denominacion: "RIBERA DEL DUERO",
         alergenos: [],
         nombres: {
@@ -1115,15 +1174,15 @@ export const platos = {
         },
     },
     vilano: {
-        precio34: "21.00",
+        precio34: "23.00",
         denominacion: "RIBERA DEL DUERO",
         alergenos: [],
         nombres: {
-            es: "Vilano",
-            en: "Vilano",
-            fr: "Vilano",
-            de: "Vilano",
-            it: "Vilano",
+            es: "Vilano 57",
+            en: "Vilano 57",
+            fr: "Vilano 57",
+            de: "Vilano 57",
+            it: "Vilano 57",
         },
         descripciones: {
             es: "Tempranillo expresivo, taninos redondos",
@@ -1134,7 +1193,7 @@ export const platos = {
         },
     },
     matasnos: {
-        precio34: "38.00",
+        precio34: "40.00",
         denominacion: "RIBERA DEL DUERO",
         alergenos: [],
         nombres: {
@@ -1153,7 +1212,7 @@ export const platos = {
         },
     },
     velilla: {
-        precio34: "20.50",
+        precio34: "21.50",
         denominacion: "RIBERA DEL DUERO",
         alergenos: [],
         nombres: {
@@ -1172,7 +1231,7 @@ export const platos = {
         },
     },
     fincaVallejo: {
-        precio34: "16.50",
+        precio34: "16.80",
         denominacion: "RIBERA DEL DUERO",
         alergenos: [],
         nombres: {
@@ -1191,7 +1250,7 @@ export const platos = {
         },
     },
     malabrigo: {
-        precio34: "48.00",
+        precio34: "46.00",
         denominacion: "PREMIUM SELECTION",
         alergenos: [],
         nombres: {
@@ -1210,7 +1269,7 @@ export const platos = {
         },
     },
     pagoSantaCruz: {
-        precio34: "56.00",
+        precio34: "58.00",
         denominacion: "PREMIUM SELECTION",
         alergenos: [],
         nombres: {
@@ -1229,7 +1288,7 @@ export const platos = {
         },
     },
     valOsa: {
-        precio34: "26.00",
+        precio34: "25.00",
         denominacion: "BIERZO",
         alergenos: [],
         nombres: {
@@ -1248,7 +1307,7 @@ export const platos = {
         },
     },
     petitPittacum: {
-        precio34: "14.00",
+        precio34: "14.50",
         denominacion: "BIERZO",
         alergenos: [],
         nombres: {
@@ -1267,7 +1326,7 @@ export const platos = {
         },
     },
     retuerta: {
-        precio34: "38.00",
+        precio34: "40.00",
         denominacion: "TIERRAS DE LEÓN",
         alergenos: [],
         nombres: {
@@ -1307,7 +1366,7 @@ export const platos = {
 
     // === VINOS BLANCOS ===
     santiagoRuiz: {
-        precio34: "22.50",
+        precio34: "23.50",
         denominacion: "RÍAS BAIXAS",
         alergenos: [],
         nombres: {
@@ -1326,7 +1385,7 @@ export const platos = {
         },
     },
     bouzaDoRei: {
-        precio34: "19.00",
+        precio34: "19.50",
         denominacion: "RÍAS BAIXAS",
         alergenos: [],
         nombres: {
@@ -1364,7 +1423,7 @@ export const platos = {
         },
     },
     condeAlbarei: {
-        precio34: "17.80",
+        precio34: "18.80",
         denominacion: "RÍAS BAIXAS",
         alergenos: [],
         nombres: {
@@ -1383,7 +1442,7 @@ export const platos = {
         },
     },
     marDeFrades: {
-        precio34: "24.00",
+        precio34: "24.50",
         denominacion: "RÍAS BAIXAS",
         alergenos: [],
         nombres: {
@@ -1402,7 +1461,7 @@ export const platos = {
         },
     },
     casalDeArman: {
-        precio34: "22.00",
+        precio34: "23.50",
         denominacion: "RIBEIRO",
         alergenos: [],
         nombres: {
@@ -1442,7 +1501,7 @@ export const platos = {
     },
     cuatroFerrados: {
         // FIX: era "precio", ahora es "precio34" para consistencia con DisenoBebida
-        precio34: "18.80",
+        precio34: "20.80",
         denominacion: "RIBEIRO",
         alergenos: [],
         nombres: {
@@ -1462,7 +1521,7 @@ export const platos = {
     },
     // FIX: añadido campo "nombres" que faltaba, y eliminado "descripciones" duplicado
     cregoMonaguilloBlanco: {
-        precio34: "17.80",
+        precio34: "18.80",
         denominacion: "GODELLO - MONTERREY",
         alergenos: [],
         nombres: {
@@ -1500,7 +1559,7 @@ export const platos = {
         },
     },
     rebolledoBlanco: {
-        precio34: "18.50",
+        precio34: "19.50",
         denominacion: "GODELLO - VALDEORRAS",
         alergenos: [],
         nombres: {
@@ -1519,7 +1578,7 @@ export const platos = {
         },
     },
     guitian: {
-        precio34: "24.00",
+        precio34: "25.00",
         denominacion: "GODELLO - VALDEORRAS",
         alergenos: [],
         nombres: {
@@ -1556,8 +1615,27 @@ export const platos = {
             it: "Godello classico, fresco e aromatico",
         },
     },
+     quintadapeza: {
+        precio34: "17.80",
+        denominacion: "GODELLO - VALDEORRAS",
+        alergenos: [],
+        nombres: {
+            es: "Quinta da Peza",
+            en: "Quinta da Peza",
+            fr: "Quinta da Peza",
+            de: "Quinta da Peza",
+            it: "Quinta da Peza",
+        },
+        descripciones: {
+            es: "Blanco fresco y untuoso, con vibrantes aromas a manzana, cítricos y fondo mineral.",
+            en: "A fresh, creamy white wine with vibrant aromas of apple and citrus, and a mineral undertone.",
+            fr: "Un vin blanc frais et onctueux, aux arômes vifs de pomme et d'agrumes, avec une note minérale en fond.",
+            de: "Ein frischer, cremiger Weißwein mit lebhaften Aromen von Apfel und Zitrusfrüchten sowie einer mineralischen Note im Abgang.",
+            it: "Bianco fresco e cremoso, con vivaci aromi di mela, agrumi e note minerali di fondo.",
+        },
+    },
     godevalCepasVellas: {
-        precio34: "26.00",
+        precio34: "27.00",
         denominacion: "GODELLO - VALDEORRAS",
         alergenos: [],
         nombres: {
@@ -1596,7 +1674,7 @@ export const platos = {
     },
     // === VINOS ROSADOS ===
     pizarrasOtero: {
-        precio34: "12.50",
+        precio34: "13.50",
         denominacion: "BIERZO",
         alergenos: [],
         nombres: {
@@ -1615,7 +1693,7 @@ export const platos = {
         },
     },
     lambruscoGalieri: {
-        precio34: "11.80",
+        precio34: "12.80",
         denominacion: "LAMBRUSCO",
         alergenos: [],
         nombres: {
@@ -1692,7 +1770,7 @@ export const platos = {
 
     // === BURBUJAS: CAVAS Y CHAMPAGNE ===
     marDeFradesEspumoso: {
-        precio34: "26.00",
+        precio34: "28.00",
         denominacion: "ESPUMOSO",
         alergenos: [],
         nombres: {
@@ -1711,7 +1789,7 @@ export const platos = {
         },
     },
     annaCodorniu: {
-        precio34: "17.50",
+        precio34: "18.50",
         denominacion: "BRUT",
         alergenos: [],
         nombres: {
@@ -1787,7 +1865,7 @@ export const platos = {
         },
     },
     bollinger: {
-        precio34: "68.50",
+        precio34: "68.00",
         denominacion: "CHAMPAGNE",
         alergenos: [],
         nombres: {
@@ -1806,7 +1884,7 @@ export const platos = {
         },
     },
     moetChandon: {
-        precio34: "54.00",
+        precio34: "55.00",
         denominacion: "CHAMPAGNE",
         alergenos: [],
         nombres: {
